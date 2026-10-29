@@ -1,0 +1,589 @@
+{
+  "catalogue": {
+    "name": "Estados Unidos",
+    "id": "b214-ff29-ec1d-132f",
+    "battleScribeVersion": "2.03",
+    "gameSystemId": "sys-3a9e-05ac-a496-2bc9",
+    "gameSystemRevision": 1,
+    "library": false,
+    "revision": 1,
+    "type": "catalogue",
+    "entryLinks": [
+      {
+        "name": "Líder",
+        "id": "0333-3998-41d3-ae7d",
+        "hidden": false,
+        "import": true,
+        "targetId": "6ba0-8829-68a2-f510",
+        "type": "selectionEntry",
+        "costs": [{"name": "Puntos", "typeId": "5ff7-57ed-1086-b4b0", "value": 65}],
+        "modifiers": [
+          {
+            "field": "5ff7-57ed-1086-b4b0",
+            "type": "set",
+            "value": 60,
+            "conditions": [
+              {
+                "childId": "c314-2bf7-e3ad-a64f",
+                "childName": "Ejército Regular",
+                "field": "selections",
+                "includeChildSelections": true,
+                "scope": "force",
+                "shared": true,
+                "type": "instanceOf",
+                "value": 1
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Soldado con Fusil Semiautomático + Lanzagranadas",
+        "id": "fd17-f803-bd4a-5248",
+        "hidden": false,
+        "import": true,
+        "targetId": "5565-fb2c-5f00-88f2",
+        "type": "selectionEntry",
+        "constraints": [
+          {
+            "id": "4986-3f95-03d1-debb",
+            "field": "selections",
+            "includeChildSelections": true,
+            "message": "{self} 1 de cada 4 soldados máximo",
+            "scope": "force",
+            "shared": true,
+            "type": "max",
+            "value": 0
+          }
+        ],
+        "costs": [{"name": "Puntos", "typeId": "5ff7-57ed-1086-b4b0", "value": 50}],
+        "modifiers": [
+          {
+            "field": "5ff7-57ed-1086-b4b0",
+            "type": "set",
+            "value": 45,
+            "conditions": [
+              {
+                "childId": "c314-2bf7-e3ad-a64f",
+                "childName": "Ejército Regular",
+                "field": "selections",
+                "includeChildSelections": true,
+                "scope": "force",
+                "shared": true,
+                "type": "instanceOf",
+                "value": 1
+              }
+            ]
+          },
+          {
+            "field": "4986-3f95-03d1-debb",
+            "type": "increment",
+            "value": 1,
+            "repeats": [
+              {
+                "childId": "fc1a-85d4-18f6-e078",
+                "childName": "Soldado",
+                "field": "selections",
+                "includeChildSelections": true,
+                "repeats": 1,
+                "roundUp": false,
+                "scope": "force",
+                "shared": true,
+                "value": 4
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Ayudante",
+        "id": "8068-192f-680a-8abe",
+        "hidden": false,
+        "import": true,
+        "targetId": "08b2-375f-32c6-bd6d",
+        "type": "selectionEntry",
+        "costs": [{"name": "Puntos", "typeId": "5ff7-57ed-1086-b4b0", "value": 60}],
+        "modifiers": [
+          {
+            "field": "5ff7-57ed-1086-b4b0",
+            "type": "set",
+            "value": 55,
+            "conditions": [
+              {
+                "childId": "c314-2bf7-e3ad-a64f",
+                "childName": "Ejército Regular",
+                "field": "selections",
+                "includeChildSelections": true,
+                "scope": "force",
+                "shared": true,
+                "type": "instanceOf",
+                "value": 1
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Soldado con Subfusil (SMG)",
+        "id": "8b5a-7359-3afe-fd48",
+        "hidden": false,
+        "import": true,
+        "targetId": "89c3-6fa3-96a3-13d3",
+        "type": "selectionEntry",
+        "costs": [{"name": "Puntos", "typeId": "5ff7-57ed-1086-b4b0", "value": 40}],
+        "modifiers": [
+          {
+            "field": "5ff7-57ed-1086-b4b0",
+            "type": "set",
+            "value": 35,
+            "conditions": [
+              {
+                "childId": "c314-2bf7-e3ad-a64f",
+                "childName": "Ejército Regular",
+                "field": "selections",
+                "includeChildSelections": true,
+                "scope": "force",
+                "shared": true,
+                "type": "instanceOf",
+                "value": 1
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Soldado con LMG",
+        "id": "ed24-c3d0-00f5-9e85",
+        "hidden": false,
+        "import": true,
+        "targetId": "167c-7d9d-86d8-d70b",
+        "type": "selectionEntry",
+        "constraints": [
+          {
+            "id": "f732-7cb9-d904-536c",
+            "field": "selections",
+            "includeChildSelections": true,
+            "message": "{self} 1 de cada 4 soldados máximo",
+            "scope": "force",
+            "shared": true,
+            "type": "max",
+            "value": 0
+          }
+        ],
+        "costs": [{"name": "Puntos", "typeId": "5ff7-57ed-1086-b4b0", "value": 55}],
+        "modifiers": [
+          {
+            "field": "5ff7-57ed-1086-b4b0",
+            "type": "set",
+            "value": 50,
+            "conditions": [
+              {
+                "childId": "c314-2bf7-e3ad-a64f",
+                "childName": "Ejército Regular",
+                "field": "selections",
+                "includeChildSelections": true,
+                "scope": "force",
+                "shared": true,
+                "type": "instanceOf",
+                "value": 1
+              }
+            ]
+          },
+          {
+            "field": "f732-7cb9-d904-536c",
+            "type": "increment",
+            "value": 1,
+            "repeats": [
+              {
+                "childId": "fc1a-85d4-18f6-e078",
+                "childName": "Soldado",
+                "field": "selections",
+                "includeChildSelections": true,
+                "repeats": 1,
+                "roundUp": false,
+                "scope": "force",
+                "shared": true,
+                "value": 4
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Tirador Designado",
+        "id": "4a37-c0da-a9dd-f3d9",
+        "hidden": false,
+        "import": true,
+        "targetId": "f0de-041b-afd1-2b53",
+        "type": "selectionEntry",
+        "costs": [{"name": "Puntos", "typeId": "5ff7-57ed-1086-b4b0", "value": 45}],
+        "modifiers": [
+          {
+            "field": "5ff7-57ed-1086-b4b0",
+            "type": "set",
+            "value": 40,
+            "conditions": [
+              {
+                "childId": "c314-2bf7-e3ad-a64f",
+                "childName": "Ejército Regular",
+                "field": "selections",
+                "includeChildSelections": true,
+                "scope": "force",
+                "shared": true,
+                "type": "instanceOf",
+                "value": 1
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Soldado con Fusil Semiautomático",
+        "id": "a7ba-7d7a-52d2-d399",
+        "hidden": false,
+        "import": true,
+        "targetId": "7f09-d060-d033-fb10",
+        "type": "selectionEntry",
+        "costs": [{"name": "Puntos", "typeId": "5ff7-57ed-1086-b4b0", "value": 40}],
+        "modifiers": [
+          {
+            "field": "5ff7-57ed-1086-b4b0",
+            "type": "set",
+            "value": 35,
+            "conditions": [
+              {
+                "childId": "c314-2bf7-e3ad-a64f",
+                "childName": "Ejército Regular",
+                "field": "selections",
+                "includeChildSelections": true,
+                "scope": "force",
+                "shared": true,
+                "type": "instanceOf",
+                "value": 1
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Ametralladora Media (MMG)",
+        "id": "7e90-78ca-39f8-94f1",
+        "hidden": false,
+        "import": true,
+        "targetId": "9a55-7e3c-2d39-7357",
+        "type": "selectionEntry",
+        "costs": [{"name": "Puntos", "typeId": "5ff7-57ed-1086-b4b0", "value": 100}],
+        "modifiers": [
+          {"field": "name", "join": " - ", "type": "append", "value": "Cal.30"},
+          {
+            "field": "5ff7-57ed-1086-b4b0",
+            "type": "set",
+            "value": 90,
+            "conditions": [
+              {
+                "childId": "c314-2bf7-e3ad-a64f",
+                "childName": "Ejército Regular",
+                "field": "selections",
+                "includeChildSelections": true,
+                "scope": "force",
+                "shared": true,
+                "type": "instanceOf",
+                "value": 1
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Ametralladora Pesada (HMG)",
+        "id": "456d-656d-76e9-3f06",
+        "hidden": false,
+        "import": true,
+        "targetId": "7a12-244d-f55a-2bdd",
+        "type": "selectionEntry",
+        "costs": [{"name": "Puntos", "typeId": "5ff7-57ed-1086-b4b0", "value": 175}],
+        "modifiers": [
+          {"field": "name", "join": " - ", "type": "append", "value": "Cal.50"},
+          {
+            "field": "5ff7-57ed-1086-b4b0",
+            "type": "set",
+            "value": 160,
+            "conditions": [
+              {
+                "childId": "c314-2bf7-e3ad-a64f",
+                "childName": "Ejército Regular",
+                "field": "selections",
+                "includeChildSelections": true,
+                "scope": "force",
+                "shared": true,
+                "type": "instanceOf",
+                "value": 1
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Equipo de Francotiradores",
+        "id": "6242-31ee-c788-a66e",
+        "hidden": false,
+        "import": true,
+        "targetId": "88a3-7875-42bd-089c",
+        "type": "selectionEntry",
+        "costs": [{"name": "Puntos", "typeId": "5ff7-57ed-1086-b4b0", "value": 130}],
+        "modifiers": [
+          {
+            "field": "5ff7-57ed-1086-b4b0",
+            "type": "set",
+            "value": 120,
+            "conditions": [
+              {
+                "childId": "c314-2bf7-e3ad-a64f",
+                "childName": "Ejército Regular",
+                "field": "selections",
+                "includeChildSelections": true,
+                "scope": "force",
+                "shared": true,
+                "type": "instanceOf",
+                "value": 1
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Lanzallamas",
+        "id": "fb53-447a-803c-ba28",
+        "hidden": false,
+        "import": true,
+        "targetId": "b560-df98-18e6-6811",
+        "type": "selectionEntry",
+        "categoryLinks": [{"name": "Armas de Apoyo", "id": "0c4c-a9eb-467f-5d6c", "hidden": false, "primary": true, "targetId": "7ab5-d3c1-6de2-42b0"}],
+        "costs": [{"name": "Puntos", "typeId": "5ff7-57ed-1086-b4b0", "value": 175}],
+        "modifiers": [
+          {
+            "field": "5ff7-57ed-1086-b4b0",
+            "type": "set",
+            "value": 160,
+            "conditions": [
+              {
+                "childId": "c314-2bf7-e3ad-a64f",
+                "childName": "US Army",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": true,
+                "scope": "force",
+                "shared": true,
+                "type": "instanceOf",
+                "value": 1
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Mortero Ligero",
+        "id": "b123-6d9e-defe-124f",
+        "hidden": false,
+        "import": true,
+        "targetId": "30ce-fddd-0c8d-8004",
+        "type": "selectionEntry",
+        "costs": [{"name": "Puntos", "typeId": "5ff7-57ed-1086-b4b0", "value": 135}],
+        "modifiers": [
+          {
+            "field": "5ff7-57ed-1086-b4b0",
+            "type": "set",
+            "value": 120,
+            "conditions": [
+              {
+                "childId": "c314-2bf7-e3ad-a64f",
+                "childName": "US Army",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": true,
+                "scope": "force",
+                "shared": true,
+                "type": "instanceOf",
+                "value": 1
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Mortero Medio",
+        "id": "fa7c-fe80-9747-5baa",
+        "hidden": false,
+        "import": true,
+        "targetId": "456e-d3fb-9832-a585",
+        "type": "selectionEntry",
+        "costs": [{"name": "Puntos", "typeId": "5ff7-57ed-1086-b4b0", "value": 145}],
+        "modifiers": [
+          {
+            "field": "5ff7-57ed-1086-b4b0",
+            "type": "set",
+            "value": 130,
+            "conditions": [
+              {
+                "childId": "c314-2bf7-e3ad-a64f",
+                "childName": "US Army",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": true,
+                "scope": "force",
+                "shared": true,
+                "type": "instanceOf",
+                "value": 1
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Mortero Pesado",
+        "id": "6d10-67d7-1c1c-5592",
+        "hidden": true,
+        "import": true,
+        "targetId": "aede-8dd4-7d71-0957",
+        "type": "selectionEntry",
+        "costs": [{"name": "Puntos", "typeId": "5ff7-57ed-1086-b4b0", "value": 140}]
+      }
+    ],
+    "forceEntries": [
+      {
+        "name": "US Army",
+        "id": "c314-2bf7-e3ad-a64f",
+        "comment": "US",
+        "hidden": false,
+        "categoryLinks": [
+          {"name": "Tropas", "id": "088a-6362-a034-fa86", "hidden": false, "targetId": "84b8-b88a-ee8e-23b2"},
+          {"name": "Armas de Apoyo", "id": "3857-41f3-88d3-2bc2", "hidden": false, "targetId": "7ab5-d3c1-6de2-42b0"},
+          {
+            "name": "Vehículos",
+            "id": "1eef-7f2f-498b-50b2",
+            "hidden": false,
+            "targetId": "9946-f032-b979-81fc",
+            "constraints": [
+              {
+                "id": "9f26-c138-bfac-40da",
+                "field": "selections",
+                "includeChildSelections": true,
+                "message": "Máximo 1 Vehículo",
+                "scope": "force",
+                "shared": true,
+                "type": "max",
+                "value": 1
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Rangers / Marines",
+        "id": "62ec-4021-b81e-5c93",
+        "hidden": false,
+        "categoryLinks": [
+          {"name": "Tropas", "id": "03bd-6e8b-eb9d-e98e", "hidden": false, "targetId": "84b8-b88a-ee8e-23b2"},
+          {"name": "Armas de Apoyo", "id": "70b1-c7cf-ad47-5257", "hidden": false, "targetId": "7ab5-d3c1-6de2-42b0"},
+          {
+            "name": "Vehículos",
+            "id": "c98b-09d1-d628-277d",
+            "hidden": false,
+            "targetId": "9946-f032-b979-81fc",
+            "constraints": [
+              {
+                "id": "9077-e83d-3484-7a6a",
+                "field": "selections",
+                "includeChildSelections": true,
+                "message": "Máximo 1 Vehículo",
+                "scope": "force",
+                "shared": true,
+                "type": "max",
+                "value": 1
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Aerotransportadas",
+        "id": "399d-f604-0ff3-da24",
+        "comment": "US",
+        "hidden": false,
+        "categoryLinks": [
+          {"name": "Tropas", "id": "a18e-d6cc-8656-a721", "hidden": false, "targetId": "84b8-b88a-ee8e-23b2"},
+          {"name": "Armas de Apoyo", "id": "8f45-c445-357a-9388", "hidden": false, "targetId": "7ab5-d3c1-6de2-42b0"},
+          {
+            "name": "Vehículos",
+            "id": "66ce-8ae8-f5e5-7ffb",
+            "hidden": false,
+            "targetId": "9946-f032-b979-81fc",
+            "constraints": [
+              {
+                "id": "62e0-2548-6532-10f7",
+                "field": "selections",
+                "includeChildSelections": true,
+                "message": "Máximo 1 Vehículo",
+                "scope": "force",
+                "shared": true,
+                "type": "max",
+                "value": 1
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "selectionEntries": [
+      {
+        "name": "Jeep con MMG",
+        "id": "04de-3f7d-cc9f-af7e",
+        "hidden": false,
+        "import": true,
+        "type": "model",
+        "categoryLinks": [{"name": "Vehículos", "id": "1ded-4b72-836b-23e4", "hidden": false, "primary": true, "targetId": "9946-f032-b979-81fc"}],
+        "costs": [{"name": "Puntos", "typeId": "5ff7-57ed-1086-b4b0", "value": 170}],
+        "infoLinks": [{"name": "MMG", "id": "80ed-9909-49b4-cd2e", "hidden": false, "targetId": "1882-d25a-3103-c575", "type": "profile"}],
+        "modifiers": [
+          {
+            "field": "5ff7-57ed-1086-b4b0",
+            "type": "set",
+            "value": 160,
+            "conditions": [
+              {
+                "childId": "c314-2bf7-e3ad-a64f",
+                "childName": "Ejército Regular",
+                "field": "selections",
+                "includeChildSelections": true,
+                "scope": "force",
+                "shared": true,
+                "type": "instanceOf",
+                "value": 1
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "M8/M20 con cañón",
+        "id": "c6a7-19df-9ba8-149d",
+        "hidden": false,
+        "import": true,
+        "type": "model",
+        "categoryLinks": [{"name": "Vehículos", "id": "e51e-120c-e2d0-a2a5", "hidden": false, "primary": true, "targetId": "9946-f032-b979-81fc"}],
+        "costs": [{"name": "Puntos", "typeId": "5ff7-57ed-1086-b4b0", "value": 230}],
+        "infoLinks": [{"name": "Cañón", "id": "1d76-a2b0-b9ed-38f8", "hidden": false, "targetId": "0c3b-7948-4cdc-4627", "type": "profile"}]
+      },
+      {
+        "name": "Semioruga con HMG",
+        "id": "9119-5a5f-2c63-caa9",
+        "hidden": false,
+        "import": true,
+        "type": "model",
+        "categoryLinks": [{"name": "Vehículos", "id": "c291-3a79-ba9b-b976", "hidden": false, "primary": true, "targetId": "9946-f032-b979-81fc"}],
+        "costs": [{"name": "Puntos", "typeId": "5ff7-57ed-1086-b4b0", "value": 230}],
+        "infoLinks": [{"name": "HMG", "id": "552c-0935-7f4b-2f36", "hidden": false, "targetId": "d513-4f3c-1b2d-cc3b", "type": "profile"}]
+      }
+    ]
+  }
+}

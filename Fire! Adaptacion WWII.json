@@ -1,0 +1,1758 @@
+{
+  "gameSystem": {
+    "name": "Fire! Adaptacion WWII",
+    "id": "sys-3a9e-05ac-a496-2bc9",
+    "battleScribeVersion": "2.03",
+    "library": true,
+    "revision": 1,
+    "type": "gameSystem",
+    "categoryEntries": [
+      {"name": "Armas de Apoyo", "id": "7ab5-d3c1-6de2-42b0", "hidden": false},
+      {"name": "Extras", "id": "4941-7897-563e-bf79", "hidden": false},
+      {
+        "name": "Tropas",
+        "id": "84b8-b88a-ee8e-23b2",
+        "hidden": false,
+        "infoLinks": [
+          {
+            "name": "Tipo III",
+            "id": "1f70-d9a8-4924-14a3",
+            "hidden": true,
+            "targetId": "e149-9a99-fa42-a97e",
+            "type": "profile",
+            "modifiers": [
+              {
+                "field": "hidden",
+                "type": "set",
+                "value": false,
+                "conditionGroups": [
+                  {
+                    "type": "or",
+                    "conditions": [
+                      {
+                        "childId": "1aa4-c366-b73b-3632",
+                        "childName": "Waffen SS",
+                        "field": "selections",
+                        "includeChildSelections": true,
+                        "scope": "force",
+                        "shared": true,
+                        "type": "instanceOf",
+                        "value": 1
+                      },
+                      {
+                        "childId": "c314-2bf7-e3ad-a64f",
+                        "childName": "Ejército Regular",
+                        "field": "selections",
+                        "includeChildSelections": true,
+                        "scope": "force",
+                        "shared": true,
+                        "type": "instanceOf",
+                        "value": 1
+                      },
+                      {
+                        "childId": "c211-5d39-539a-90f7",
+                        "childName": "Ejercito Regular",
+                        "field": "selections",
+                        "includeChildSelections": true,
+                        "scope": "force",
+                        "shared": true,
+                        "type": "instanceOf",
+                        "value": 1
+                      },
+                      {
+                        "childId": "47c3-5d30-ecf5-fb3e",
+                        "childName": "Ejército Regular",
+                        "field": "selections",
+                        "includeChildSelections": true,
+                        "scope": "force",
+                        "shared": true,
+                        "type": "instanceOf",
+                        "value": 1
+                      },
+                      {
+                        "childId": "46e6-bc31-38e7-9ae1",
+                        "childName": "Infantería de Marina",
+                        "field": "selections",
+                        "includeChildSelections": true,
+                        "scope": "force",
+                        "shared": true,
+                        "type": "instanceOf",
+                        "value": 1
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Tipo V",
+            "id": "0a20-c9ed-be0b-6b65",
+            "hidden": false,
+            "targetId": "6a1e-fb5a-31f8-0d8c",
+            "type": "profile",
+            "modifiers": [
+              {
+                "field": "hidden",
+                "type": "set",
+                "value": false,
+                "conditionGroups": [
+                  {
+                    "type": "or",
+                    "conditions": [
+                      {
+                        "childId": "eff2-5349-80f5-ea58",
+                        "childName": "Fallschirmjäger",
+                        "field": "selections",
+                        "includeChildSelections": true,
+                        "scope": "force",
+                        "shared": true,
+                        "type": "instanceOf",
+                        "value": 1
+                      },
+                      {
+                        "childId": "62ec-4021-b81e-5c93",
+                        "childName": "Rangers / Marines",
+                        "field": "selections",
+                        "includeChildSelections": true,
+                        "scope": "force",
+                        "shared": true,
+                        "type": "instanceOf",
+                        "value": 1
+                      },
+                      {
+                        "childId": "399d-f604-0ff3-da24",
+                        "childName": "Paracaidistas",
+                        "field": "selections",
+                        "includeChildSelections": true,
+                        "scope": "force",
+                        "shared": true,
+                        "type": "instanceOf",
+                        "value": 1
+                      },
+                      {
+                        "childId": "4cff-e725-73cc-0775",
+                        "childName": "Infantería Naval",
+                        "field": "selections",
+                        "includeChildSelections": true,
+                        "scope": "force",
+                        "shared": true,
+                        "type": "instanceOf",
+                        "value": 1
+                      },
+                      {
+                        "childId": "e73f-24b6-2868-ab86",
+                        "childName": "Paracaidistas",
+                        "field": "selections",
+                        "includeChildSelections": true,
+                        "scope": "force",
+                        "shared": true,
+                        "type": "instanceOf",
+                        "value": 1
+                      },
+                      {
+                        "childId": "daca-62d8-65ac-6b24",
+                        "childName": "Fuerza Expedicionaria",
+                        "field": "selections",
+                        "includeChildSelections": true,
+                        "scope": "force",
+                        "shared": true,
+                        "type": "instanceOf",
+                        "value": 1
+                      },
+                      {
+                        "childId": "d6a2-5633-620a-0929",
+                        "childName": "Red Devils",
+                        "field": "selections",
+                        "includeChildSelections": true,
+                        "scope": "force",
+                        "shared": true,
+                        "type": "instanceOf",
+                        "value": 1
+                      },
+                      {
+                        "childId": "e359-29d8-3923-a8a0",
+                        "childName": "Ejército de la Guardia",
+                        "field": "selections",
+                        "includeChildSelections": true,
+                        "scope": "force",
+                        "shared": true,
+                        "type": "instanceOf",
+                        "value": 1
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Tipo IV",
+            "id": "a795-e8a9-0d64-4da5",
+            "hidden": false,
+            "targetId": "232d-b1e8-496a-43e1",
+            "type": "profile",
+            "modifiers": [
+              {
+                "field": "hidden",
+                "type": "set",
+                "value": false,
+                "conditionGroups": [
+                  {
+                    "type": "or",
+                    "conditions": [
+                      {
+                        "childId": "bbc5-2a64-8564-8ff4",
+                        "childName": "Wehrmacht",
+                        "field": "selections",
+                        "includeChildSelections": true,
+                        "scope": "force",
+                        "shared": true,
+                        "type": "instanceOf",
+                        "value": 1
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Tipo I",
+            "id": "a6d8-0678-77f6-328b",
+            "hidden": true,
+            "targetId": "3ede-747a-dd68-e9f6",
+            "type": "profile",
+            "modifiers": [
+              {
+                "field": "hidden",
+                "type": "set",
+                "value": false,
+                "conditions": [
+                  {
+                    "childId": "3c54-0d2e-37a2-1438",
+                    "childName": "Milicia",
+                    "field": "selections",
+                    "includeChildSelections": true,
+                    "scope": "force",
+                    "shared": true,
+                    "type": "instanceOf",
+                    "value": 1
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {"name": "Vehículos", "id": "9946-f032-b979-81fc", "hidden": false},
+      {"name": "Soldado", "id": "fc1a-85d4-18f6-e078", "hidden": false},
+      {"name": "Lider", "id": "6d96-3fec-65e5-3f58", "hidden": false},
+      {"name": "Ayudante", "id": "5747-3c5c-c6c8-4cc5", "hidden": false},
+      {"name": "Tirador Designado", "id": "3bee-489b-662a-a604", "hidden": false},
+      {"name": "Tirador", "id": "d708-d067-cb27-7812", "hidden": false},
+      {"name": "Cargador", "id": "96e1-23ef-6348-0b9a", "hidden": false},
+      {"name": "Jefe de Apoyo", "id": "d18a-eaee-aa98-635f", "hidden": false},
+      {"name": "Observador", "id": "9faf-e27e-9b6f-1e16", "hidden": false}
+    ],
+    "costTypes": [{"name": "Puntos", "id": "5ff7-57ed-1086-b4b0", "defaultCostLimit": -1}],
+    "profileTypes": [
+      {
+        "name": "Tropas",
+        "id": "af54-404e-fd72-94c2",
+        "hidden": false,
+        "sortIndex": 1,
+        "characteristicTypes": [{"name": "Entrenamiento", "id": "f1dd-0e76-a389-0129"}, {"name": "Experiencia", "id": "c4d4-31a5-2900-72b7"}]
+      },
+      {
+        "name": "Armas",
+        "id": "1232-19e6-d77d-8ca7",
+        "hidden": false,
+        "sortIndex": 3,
+        "characteristicTypes": [
+          {"name": "PF", "id": "533c-00c3-d1b6-ab2c"},
+          {
+            "name": "Alcance",
+            "id": "6bd4-1c00-6365-bad2",
+            "formatRules": [
+              {
+                "name": "New Format Rule",
+                "id": "9982-0a25-eb2f-cf43",
+                "comment": "Unidades de medida (cm)",
+                "hidden": false,
+                "match": "([\\s\\S]*)",
+                "replace": "$1 cm",
+                "type": "regex"
+              },
+              {"name": "New Format Rule", "id": "e806-a9e7-2e57-8dc6", "comment": "Empty → -", "hidden": false, "match": "^$", "replace": "-", "type": "regex"}
+            ]
+          },
+          {"name": "B/E", "id": "d392-5351-0bd3-8cca"},
+          {"name": "Notas", "id": "dc45-97b4-54a3-d8bd"}
+        ]
+      }
+    ],
+    "sharedProfiles": [
+      {
+        "name": "Subfusil (SMG)",
+        "id": "ef3f-a9e7-5e3b-7e21",
+        "hidden": false,
+        "typeId": "1232-19e6-d77d-8ca7",
+        "typeName": "Armas",
+        "characteristics": [
+          {"name": "PF", "$text": "3", "typeId": "533c-00c3-d1b6-ab2c"},
+          {"name": "Alcance", "$text": "40", "typeId": "6bd4-1c00-6365-bad2"},
+          {"name": "B/E", "$text": "3/6", "typeId": "d392-5351-0bd3-8cca"},
+          {"name": "Notas", "$text": "\n", "typeId": "dc45-97b4-54a3-d8bd"}
+        ]
+      },
+      {
+        "name": "Fusil Semiautomático",
+        "id": "71bc-64bc-198f-ef5e",
+        "hidden": false,
+        "typeId": "1232-19e6-d77d-8ca7",
+        "typeName": "Armas",
+        "characteristics": [
+          {"name": "PF", "$text": "2", "typeId": "533c-00c3-d1b6-ab2c"},
+          {"name": "Alcance", "$text": "100", "typeId": "6bd4-1c00-6365-bad2"},
+          {"name": "B/E", "$text": "4/8", "typeId": "d392-5351-0bd3-8cca"},
+          {"name": "Notas", "$text": "M1 Garand / Carabina", "typeId": "dc45-97b4-54a3-d8bd"}
+        ]
+      },
+      {
+        "name": "LMG",
+        "id": "3650-8d00-f025-3054",
+        "hidden": false,
+        "typeId": "1232-19e6-d77d-8ca7",
+        "typeName": "Armas",
+        "characteristics": [
+          {"name": "PF", "$text": "4", "typeId": "533c-00c3-d1b6-ab2c"},
+          {"name": "Alcance", "$text": "100", "typeId": "6bd4-1c00-6365-bad2"},
+          {"name": "B/E", "$text": "4/7", "typeId": "d392-5351-0bd3-8cca"},
+          {"name": "Notas", "$text": "AT4 - ¡Atascada!", "typeId": "dc45-97b4-54a3-d8bd"}
+        ]
+      },
+      {
+        "name": "Fusil de Precisión",
+        "id": "36ba-e852-87cc-d57f",
+        "hidden": false,
+        "typeId": "1232-19e6-d77d-8ca7",
+        "typeName": "Armas",
+        "characteristics": [
+          {"name": "PF", "$text": "1", "typeId": "533c-00c3-d1b6-ab2c"},
+          {"name": "Alcance", "$text": "100", "typeId": "6bd4-1c00-6365-bad2"},
+          {"name": "B/E", "$text": "4/8", "typeId": "d392-5351-0bd3-8cca"},
+          {"name": "Notas", "$text": "Mira Telescópica", "typeId": "dc45-97b4-54a3-d8bd"}
+        ]
+      },
+      {
+        "name": "Granada Fragmentación Manual",
+        "id": "7829-48c5-6baf-218a",
+        "hidden": false,
+        "typeId": "1232-19e6-d77d-8ca7",
+        "typeName": "Armas",
+        "characteristics": [
+          {"name": "PF", "$text": "Área", "typeId": "533c-00c3-d1b6-ab2c"},
+          {"name": "Alcance", "$text": "20", "typeId": "6bd4-1c00-6365-bad2"},
+          {"name": "B/E", "$text": "3/8", "typeId": "d392-5351-0bd3-8cca"},
+          {"name": "Notas", "$text": "AT4 - Humo", "typeId": "dc45-97b4-54a3-d8bd"}
+        ]
+      },
+      {
+        "name": "Cóctel Molotov",
+        "id": "cd57-e258-3453-5673",
+        "hidden": false,
+        "typeId": "1232-19e6-d77d-8ca7",
+        "typeName": "Armas",
+        "characteristics": [
+          {"name": "PF", "$text": "Área", "typeId": "533c-00c3-d1b6-ab2c"},
+          {"name": "Alcance", "$text": "20", "typeId": "6bd4-1c00-6365-bad2"},
+          {"name": "B/E", "$text": "1/8", "typeId": "d392-5351-0bd3-8cca"},
+          {"name": "Notas", "$text": "AT3 - Humo", "typeId": "dc45-97b4-54a3-d8bd"}
+        ]
+      },
+      {
+        "name": "Granada de Lanzagrandas",
+        "id": "bf17-db0d-4bb2-d5fd",
+        "hidden": false,
+        "typeId": "1232-19e6-d77d-8ca7",
+        "typeName": "Armas",
+        "characteristics": [
+          {"name": "PF", "$text": "Área", "typeId": "533c-00c3-d1b6-ab2c"},
+          {"name": "Alcance", "$text": "40", "typeId": "6bd4-1c00-6365-bad2"},
+          {"name": "B/E", "$text": "3/8", "typeId": "d392-5351-0bd3-8cca"},
+          {"name": "Notas", "$text": "AT4 - Munición para fusil con Lanzagranadas", "typeId": "dc45-97b4-54a3-d8bd"}
+        ]
+      },
+      {
+        "name": "Lanzacohetes Recargable",
+        "id": "f47c-1226-280e-3ebd",
+        "hidden": false,
+        "typeId": "1232-19e6-d77d-8ca7",
+        "typeName": "Armas",
+        "characteristics": [
+          {"name": "PF", "$text": "Área", "typeId": "533c-00c3-d1b6-ab2c"},
+          {"name": "Alcance", "$text": "60", "typeId": "6bd4-1c00-6365-bad2"},
+          {"name": "B/E", "$text": "3/8", "typeId": "d392-5351-0bd3-8cca"},
+          {"name": "Notas", "$text": "AT10 - Recarga", "typeId": "dc45-97b4-54a3-d8bd"}
+        ]
+      },
+      {
+        "name": "Cohetes extra",
+        "id": "4fcf-34c7-2fed-7b9a",
+        "hidden": false,
+        "typeId": "1232-19e6-d77d-8ca7",
+        "typeName": "Armas",
+        "characteristics": [
+          {"name": "PF", "$text": "-", "typeId": "533c-00c3-d1b6-ab2c"},
+          {"name": "Alcance", "$text": "-", "typeId": "6bd4-1c00-6365-bad2"},
+          {"name": "B/E", "$text": "-", "typeId": "d392-5351-0bd3-8cca"},
+          {"name": "Notas", "$text": "Munición adicional para el lanzacohetes recargable", "typeId": "dc45-97b4-54a3-d8bd"}
+        ]
+      },
+      {
+        "name": "MMG",
+        "id": "1882-d25a-3103-c575",
+        "hidden": false,
+        "typeId": "1232-19e6-d77d-8ca7",
+        "typeName": "Armas",
+        "characteristics": [
+          {"name": "PF", "$text": "5", "typeId": "533c-00c3-d1b6-ab2c"},
+          {"name": "Alcance", "$text": "120", "typeId": "6bd4-1c00-6365-bad2"},
+          {"name": "B/E", "$text": "4/8", "typeId": "d392-5351-0bd3-8cca"},
+          {"name": "Notas", "$text": "AT6 - ¡Atascada! - Visión 180º", "typeId": "dc45-97b4-54a3-d8bd"}
+        ]
+      },
+      {
+        "name": "HMG",
+        "id": "d513-4f3c-1b2d-cc3b",
+        "hidden": false,
+        "typeId": "1232-19e6-d77d-8ca7",
+        "typeName": "Armas",
+        "characteristics": [
+          {"name": "PF", "$text": "6", "typeId": "533c-00c3-d1b6-ab2c"},
+          {"name": "Alcance", "$text": "150", "typeId": "6bd4-1c00-6365-bad2"},
+          {"name": "B/E", "$text": "4/8", "typeId": "d392-5351-0bd3-8cca"},
+          {"name": "Notas", "$text": "AT6 - ¡Atascada! - Visión 180º - Montar/Desmontar", "typeId": "dc45-97b4-54a3-d8bd"}
+        ]
+      },
+      {
+        "name": "Lanzallamas",
+        "id": "0f6e-e8da-df0f-5f26",
+        "hidden": false,
+        "typeId": "1232-19e6-d77d-8ca7",
+        "typeName": "Armas",
+        "characteristics": [
+          {"name": "PF", "$text": "3", "typeId": "533c-00c3-d1b6-ab2c"},
+          {"name": "Alcance", "$text": "40", "typeId": "6bd4-1c00-6365-bad2"},
+          {"name": "B/E", "$text": "5/9", "typeId": "d392-5351-0bd3-8cca"},
+          {"name": "Notas", "$text": "AT3", "typeId": "dc45-97b4-54a3-d8bd"}
+        ]
+      },
+      {
+        "name": "Mortero 80 mm",
+        "id": "4b6a-1264-b631-7263",
+        "hidden": false,
+        "typeId": "1232-19e6-d77d-8ca7",
+        "typeName": "Armas",
+        "characteristics": [
+          {"name": "PF", "$text": "Área", "typeId": "533c-00c3-d1b6-ab2c"},
+          {"name": "Alcance", "$text": "120", "typeId": "6bd4-1c00-6365-bad2"},
+          {"name": "B/E", "$text": "4/8", "typeId": "d392-5351-0bd3-8cca"},
+          {"name": "Notas", "$text": "AT7 - Recarga - Montar/Desmontar - Visión 180º - Humo", "typeId": "dc45-97b4-54a3-d8bd"}
+        ]
+      },
+      {
+        "name": "Mortero 60 mm",
+        "id": "6ab2-636c-23bb-2d6b",
+        "hidden": false,
+        "typeId": "1232-19e6-d77d-8ca7",
+        "typeName": "Armas",
+        "characteristics": [
+          {"name": "PF", "$text": "Área", "typeId": "533c-00c3-d1b6-ab2c"},
+          {"name": "Alcance", "$text": "90", "typeId": "6bd4-1c00-6365-bad2"},
+          {"name": "B/E", "$text": "3/8", "typeId": "d392-5351-0bd3-8cca"},
+          {"name": "Notas", "$text": "AT6 - Recarga - Montar/Desmontar - Visión 180º - Humo", "typeId": "dc45-97b4-54a3-d8bd"}
+        ]
+      },
+      {
+        "name": "Mortero 120 mm",
+        "id": "8abc-1f6b-9bcd-da65",
+        "hidden": false,
+        "typeId": "1232-19e6-d77d-8ca7",
+        "typeName": "Armas",
+        "characteristics": [
+          {"name": "PF", "$text": "Área", "typeId": "533c-00c3-d1b6-ab2c"},
+          {"name": "Alcance", "$text": "150", "typeId": "6bd4-1c00-6365-bad2"},
+          {"name": "B/E", "$text": "4/9", "typeId": "d392-5351-0bd3-8cca"},
+          {"name": "Notas", "$text": "AT8 - Área 3d10 - Recarga - Montar/Desmontar - Visión 180º - Humo", "typeId": "dc45-97b4-54a3-d8bd"}
+        ]
+      },
+      {
+        "name": "Tipo III",
+        "id": "e149-9a99-fa42-a97e",
+        "hidden": true,
+        "typeId": "af54-404e-fd72-94c2",
+        "typeName": "Tropas",
+        "characteristics": [
+          {"name": "Entrenamiento", "$text": "Profesional [6]", "typeId": "f1dd-0e76-a389-0129"},
+          {"name": "Experiencia", "$text": "Experimentado [0]", "typeId": "c4d4-31a5-2900-72b7"}
+        ]
+      },
+      {
+        "name": "Tipo V",
+        "id": "6a1e-fb5a-31f8-0d8c",
+        "hidden": true,
+        "typeId": "af54-404e-fd72-94c2",
+        "typeName": "Tropas",
+        "characteristics": [
+          {"name": "Entrenamiento", "$text": "Élite [7]", "typeId": "f1dd-0e76-a389-0129"},
+          {"name": "Experiencia", "$text": "Experimentado [0]", "typeId": "c4d4-31a5-2900-72b7"}
+        ]
+      },
+      {
+        "name": "Tipo IV",
+        "id": "232d-b1e8-496a-43e1",
+        "hidden": true,
+        "typeId": "af54-404e-fd72-94c2",
+        "typeName": "Tropas",
+        "characteristics": [
+          {"name": "Entrenamiento", "$text": "Profesional [6]", "typeId": "f1dd-0e76-a389-0129"},
+          {"name": "Experiencia", "$text": "Veterano [-1]", "typeId": "c4d4-31a5-2900-72b7"}
+        ]
+      },
+      {
+        "name": "Fusil",
+        "id": "db0f-5be5-5919-9084",
+        "hidden": false,
+        "typeId": "1232-19e6-d77d-8ca7",
+        "typeName": "Armas",
+        "characteristics": [
+          {"name": "PF", "$text": "1", "typeId": "533c-00c3-d1b6-ab2c"},
+          {"name": "Alcance", "$text": "100", "typeId": "6bd4-1c00-6365-bad2"},
+          {"name": "B/E", "$text": "4/8", "typeId": "d392-5351-0bd3-8cca"},
+          {"name": "Notas", "$text": "\n", "typeId": "dc45-97b4-54a3-d8bd"}
+        ]
+      },
+      {
+        "name": "Fusil de asalto",
+        "id": "4287-c51c-084e-24a2",
+        "hidden": false,
+        "typeId": "1232-19e6-d77d-8ca7",
+        "typeName": "Armas",
+        "characteristics": [
+          {"name": "PF", "$text": "3", "typeId": "533c-00c3-d1b6-ab2c"},
+          {"name": "Alcance", "$text": "70", "typeId": "6bd4-1c00-6365-bad2"},
+          {"name": "B/E", "$text": "4/7", "typeId": "d392-5351-0bd3-8cca"},
+          {"name": "Notas", "$text": "StG-44", "typeId": "dc45-97b4-54a3-d8bd"}
+        ]
+      },
+      {
+        "name": "Lanzacohetes Deshechable",
+        "id": "c6c9-b961-d16e-4e17",
+        "hidden": false,
+        "typeId": "1232-19e6-d77d-8ca7",
+        "typeName": "Armas",
+        "characteristics": [
+          {"name": "PF", "$text": "Área", "typeId": "533c-00c3-d1b6-ab2c"},
+          {"name": "Alcance", "$text": "60", "typeId": "6bd4-1c00-6365-bad2"},
+          {"name": "B/E", "$text": "3/8", "typeId": "d392-5351-0bd3-8cca"},
+          {"name": "Notas", "$text": "AT10 - Recarga", "typeId": "dc45-97b4-54a3-d8bd"}
+        ]
+      },
+      {
+        "name": "Perro Adiestrado",
+        "id": "a28f-8c43-0b69-deaf",
+        "hidden": false,
+        "typeId": "1232-19e6-d77d-8ca7",
+        "typeName": "Armas",
+        "characteristics": [
+          {"name": "PF", "$text": "3 A1", "typeId": "533c-00c3-d1b6-ab2c"},
+          {"name": "Alcance", "$text": "20", "typeId": "6bd4-1c00-6365-bad2"},
+          {"name": "B/E", "$text": "ESP", "typeId": "d392-5351-0bd3-8cca"},
+          {"name": "Notas", "$text": "", "typeId": "dc45-97b4-54a3-d8bd"}
+        ]
+      },
+      {
+        "name": "Cañón",
+        "id": "0c3b-7948-4cdc-4627",
+        "hidden": false,
+        "typeId": "1232-19e6-d77d-8ca7",
+        "typeName": "Armas",
+        "characteristics": [
+          {"name": "PF", "$text": "Área", "typeId": "533c-00c3-d1b6-ab2c"},
+          {"name": "Alcance", "$text": "120", "typeId": "6bd4-1c00-6365-bad2"},
+          {"name": "B/E", "$text": "3/8", "typeId": "d392-5351-0bd3-8cca"},
+          {"name": "Notas", "$text": "AT8 - Área 3d10", "typeId": "dc45-97b4-54a3-d8bd"}
+        ]
+      },
+      {
+        "name": "Tipo I",
+        "id": "3ede-747a-dd68-e9f6",
+        "hidden": true,
+        "typeId": "af54-404e-fd72-94c2",
+        "typeName": "Tropas",
+        "characteristics": [
+          {"name": "Entrenamiento", "$text": "Miliciano [5]", "typeId": "f1dd-0e76-a389-0129"},
+          {"name": "Experiencia", "$text": "Novato [-1]", "typeId": "c4d4-31a5-2900-72b7"}
+        ]
+      },
+      {
+        "name": "Lanzagranadas",
+        "id": "b86e-2071-256c-e6c3",
+        "hidden": false,
+        "typeId": "1232-19e6-d77d-8ca7",
+        "typeName": "Armas",
+        "characteristics": [
+          {"name": "PF", "$text": "Área", "typeId": "533c-00c3-d1b6-ab2c"},
+          {"name": "Alcance", "$text": "40", "typeId": "6bd4-1c00-6365-bad2"},
+          {"name": "B/E", "$text": "38", "typeId": "d392-5351-0bd3-8cca"},
+          {"name": "Notas", "$text": "AT4", "typeId": "dc45-97b4-54a3-d8bd"}
+        ]
+      },
+      {
+        "name": "Katana",
+        "id": "f1cf-e709-a1c6-6c78",
+        "hidden": false,
+        "typeId": "1232-19e6-d77d-8ca7",
+        "typeName": "Armas",
+        "characteristics": [
+          {"name": "PF", "$text": "-", "typeId": "533c-00c3-d1b6-ab2c"},
+          {"name": "Alcance", "$text": "-", "typeId": "6bd4-1c00-6365-bad2"},
+          {"name": "B/E", "$text": "-", "typeId": "d392-5351-0bd3-8cca"},
+          {"name": "Notas", "$text": "+1 cuerpo a cuerpo", "typeId": "dc45-97b4-54a3-d8bd"}
+        ]
+      },
+      {
+        "name": "Escopeta",
+        "id": "f0e9-abdd-2600-0d55",
+        "hidden": false,
+        "typeId": "1232-19e6-d77d-8ca7",
+        "typeName": "Armas",
+        "characteristics": [
+          {"name": "PF", "$text": "1", "typeId": "533c-00c3-d1b6-ab2c"},
+          {"name": "Alcance", "$text": "30", "typeId": "6bd4-1c00-6365-bad2"},
+          {"name": "B/E", "$text": "5C/6", "typeId": "d392-5351-0bd3-8cca"},
+          {"name": "Notas", "$text": "Baja 5C/0L - Estrés 6C/6L", "typeId": "dc45-97b4-54a3-d8bd"}
+        ]
+      },
+      {
+        "name": "Pistola",
+        "id": "3d12-c54f-917d-a64b",
+        "hidden": false,
+        "typeId": "1232-19e6-d77d-8ca7",
+        "typeName": "Armas",
+        "characteristics": [
+          {"name": "PF", "$text": "2", "typeId": "533c-00c3-d1b6-ab2c"},
+          {"name": "Alcance", "$text": "25", "typeId": "6bd4-1c00-6365-bad2"},
+          {"name": "B/E", "$text": "3/6", "typeId": "d392-5351-0bd3-8cca"},
+          {"name": "Notas", "$text": "", "typeId": "dc45-97b4-54a3-d8bd"}
+        ]
+      }
+    ],
+    "sharedSelectionEntries": [
+      {
+        "name": "Cóctel Molotov",
+        "id": "b26e-42b3-ae8c-394c",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "categoryLinks": [{"name": "Extras", "id": "113d-7c97-ce26-c4ce", "hidden": false, "primary": true, "targetId": "4941-7897-563e-bf79"}],
+        "constraints": [{"id": "232f-97d1-0d0b-8ec4", "field": "selections", "includeChildSelections": true, "scope": "force", "shared": true, "type": "max", "value": 4}],
+        "costs": [{"name": "Puntos", "typeId": "5ff7-57ed-1086-b4b0", "value": 5}],
+        "infoLinks": [{"name": "Cóctel Molotov", "id": "62d6-1c75-381d-1420", "hidden": false, "targetId": "cd57-e258-3453-5673", "type": "profile"}]
+      },
+      {
+        "name": "Cohetes Extra",
+        "id": "82b5-07fe-b06d-05ae",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "categoryLinks": [{"name": "Extras", "id": "5537-0532-d579-37b7", "hidden": false, "primary": true, "targetId": "4941-7897-563e-bf79"}],
+        "constraints": [{"id": "c9d0-f399-10fb-c17e", "field": "selections", "includeChildSelections": true, "scope": "force", "shared": true, "type": "max", "value": 4}],
+        "costs": [{"name": "Puntos", "typeId": "5ff7-57ed-1086-b4b0", "value": 20}],
+        "infoLinks": [{"name": "Cohetes extra", "id": "79a8-0ef7-9e81-75fd", "hidden": false, "targetId": "4fcf-34c7-2fed-7b9a", "type": "profile"}]
+      },
+      {
+        "name": "Granadas",
+        "id": "4515-49bb-e615-c7a0",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "categoryLinks": [{"name": "Extras", "id": "ccaf-f61a-ed49-cf89", "hidden": false, "primary": true, "targetId": "4941-7897-563e-bf79"}],
+        "constraints": [{"id": "a78b-dc4b-247c-5e54", "field": "selections", "includeChildSelections": true, "scope": "force", "shared": true, "type": "max", "value": 3}],
+        "costs": [{"name": "Puntos", "typeId": "5ff7-57ed-1086-b4b0", "value": 5}],
+        "infoLinks": [{"name": "Granada Fragmentación Manual", "id": "348f-f6ec-cdbe-9681", "hidden": false, "targetId": "7829-48c5-6baf-218a", "type": "profile"}]
+      },
+      {
+        "name": "Granadas de Lanzagrandas",
+        "id": "e13d-c5a6-8f59-e746",
+        "hidden": true,
+        "import": true,
+        "type": "upgrade",
+        "categoryLinks": [{"name": "Extras", "id": "bab1-615a-aa4f-852f", "hidden": false, "primary": true, "targetId": "4941-7897-563e-bf79"}],
+        "constraints": [{"id": "7982-d074-8eff-3a83", "field": "selections", "includeChildSelections": true, "scope": "force", "shared": true, "type": "max", "value": 3}],
+        "costs": [{"name": "Puntos", "typeId": "5ff7-57ed-1086-b4b0", "value": 5}],
+        "infoLinks": [{"name": "Granada de Lanzagrandas", "id": "4af8-ba02-90bb-c565", "hidden": false, "targetId": "bf17-db0d-4bb2-d5fd", "type": "profile"}],
+        "modifiers": [
+          {
+            "field": "hidden",
+            "type": "set",
+            "value": false,
+            "conditionGroups": [
+              {
+                "type": "or",
+                "conditions": [
+                  {
+                    "childId": "b214-ff29-ec1d-132f",
+                    "childName": "Estados Unidos",
+                    "field": "selections",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "primary-catalogue",
+                    "shared": true,
+                    "type": "instanceOf",
+                    "value": 1
+                  },
+                  {
+                    "childId": "ae5f-6b05-d398-11f5",
+                    "childName": "Reino Unido",
+                    "field": "selections",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "primary-catalogue",
+                    "shared": true,
+                    "type": "instanceOf",
+                    "value": 1
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Lanzacohetes Deshechable",
+        "id": "6973-87cb-e5ec-4cbf",
+        "hidden": true,
+        "import": true,
+        "type": "upgrade",
+        "categoryLinks": [{"name": "Extras", "id": "5da7-ae7c-a72f-d6c6", "hidden": false, "primary": true, "targetId": "4941-7897-563e-bf79"}],
+        "constraints": [{"id": "200a-b715-4fb4-dd01", "field": "selections", "includeChildSelections": true, "scope": "force", "shared": true, "type": "max", "value": 2}],
+        "costs": [{"name": "Puntos", "typeId": "5ff7-57ed-1086-b4b0", "value": 25}],
+        "infoLinks": [{"name": "Lanzacohetes Deshechable", "id": "4ee1-2836-7fc1-6274", "hidden": false, "targetId": "c6c9-b961-d16e-4e17", "type": "profile"}],
+        "modifiers": [
+          {
+            "field": "hidden",
+            "type": "set",
+            "value": false,
+            "conditions": [
+              {
+                "childId": "82b5-7df9-b6c9-8e3d",
+                "childName": "Alemania",
+                "field": "selections",
+                "scope": "primary-catalogue",
+                "shared": true,
+                "type": "instanceOf",
+                "value": 1
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Lanzacohetes Recargable",
+        "id": "4759-da8f-40fd-3a93",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "categoryLinks": [{"name": "Extras", "id": "a02f-c563-6f02-f96e", "hidden": false, "primary": true, "targetId": "4941-7897-563e-bf79"}],
+        "constraints": [{"id": "f1b8-7e63-4cb2-2a72", "field": "selections", "includeChildSelections": true, "scope": "force", "shared": true, "type": "max", "value": 3}],
+        "costs": [{"name": "Puntos", "typeId": "5ff7-57ed-1086-b4b0", "value": 25}],
+        "infoLinks": [{"name": "Lanzacohetes Recargable", "id": "1995-81d3-dfbb-21e4", "hidden": false, "targetId": "f47c-1226-280e-3ebd", "type": "profile"}]
+      },
+      {
+        "name": "Perro Adiestrado",
+        "id": "a75b-1618-2fcd-7378",
+        "hidden": true,
+        "import": true,
+        "type": "upgrade",
+        "categoryLinks": [{"name": "Extras", "id": "c55a-818e-5d57-23c4", "hidden": false, "primary": true, "targetId": "4941-7897-563e-bf79"}],
+        "constraints": [{"id": "2fa4-21c2-e39d-31b3", "field": "selections", "includeChildSelections": true, "scope": "force", "shared": true, "type": "max", "value": 1}],
+        "costs": [{"name": "Puntos", "typeId": "5ff7-57ed-1086-b4b0", "value": 10}],
+        "infoLinks": [{"name": "Perro Adiestrado", "id": "3ff2-0a88-e9b4-9464", "hidden": false, "targetId": "a28f-8c43-0b69-deaf", "type": "profile"}],
+        "modifiers": [
+          {
+            "field": "hidden",
+            "type": "set",
+            "value": false,
+            "conditionGroups": [
+              {
+                "type": "or",
+                "conditions": [
+                  {"childId": "2119-439b-b3de-1f85", "childName": "URSS", "field": "selections", "scope": "primary-catalogue", "shared": true, "type": "instanceOf", "value": 1},
+                  {
+                    "childId": "82b5-7df9-b6c9-8e3d",
+                    "childName": "Alemania",
+                    "field": "selections",
+                    "scope": "primary-catalogue",
+                    "shared": true,
+                    "type": "instanceOf",
+                    "value": 1
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Ametralladora Media (MMG)",
+        "id": "9a55-7e3c-2d39-7357",
+        "hidden": false,
+        "import": true,
+        "subType": "unit-group",
+        "type": "unit",
+        "categoryLinks": [{"name": "Armas de Apoyo", "id": "8c70-1888-d507-a507", "hidden": false, "primary": true, "targetId": "7ab5-d3c1-6de2-42b0"}],
+        "selectionEntries": [
+          {
+            "name": "Tirador",
+            "id": "c23a-f4e6-d18d-571a",
+            "hidden": false,
+            "import": true,
+            "sortIndex": 1,
+            "type": "model",
+            "categoryLinks": [{"name": "Tirador", "id": "ca93-b009-3a16-2f35", "hidden": false, "primary": false, "targetId": "d708-d067-cb27-7812"}],
+            "constraints": [
+              {"id": "77c0-c0b0-f7c3-727b", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+              {"id": "8e5b-6988-5b72-d027", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+            ],
+            "infoLinks": [{"name": "MMG", "id": "dc93-3298-1859-60d5", "hidden": false, "targetId": "1882-d25a-3103-c575", "type": "profile"}]
+          },
+          {
+            "name": "Cargador",
+            "id": "86a8-3dd9-febb-551d",
+            "hidden": false,
+            "import": true,
+            "sortIndex": 2,
+            "type": "model",
+            "categoryLinks": [{"name": "Cargador", "id": "e677-9247-61a9-226b", "hidden": false, "primary": false, "targetId": "96e1-23ef-6348-0b9a"}],
+            "constraints": [
+              {"id": "a49c-46a3-2579-a5e2", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+              {"id": "6048-6480-4166-4122", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Ametralladora Pesada (HMG)",
+        "id": "7a12-244d-f55a-2bdd",
+        "hidden": false,
+        "import": true,
+        "subType": "unit-group",
+        "type": "unit",
+        "categoryLinks": [{"name": "Armas de Apoyo", "id": "0788-355c-0231-ddee", "hidden": false, "primary": true, "targetId": "7ab5-d3c1-6de2-42b0"}],
+        "selectionEntries": [
+          {
+            "name": "Tirador",
+            "id": "6923-158a-fb49-b8bb",
+            "hidden": false,
+            "import": true,
+            "sortIndex": 1,
+            "type": "model",
+            "categoryLinks": [{"name": "Tirador", "id": "1eeb-e6d8-57b7-9231", "hidden": false, "primary": false, "targetId": "d708-d067-cb27-7812"}],
+            "constraints": [
+              {"id": "65d4-9f7d-e5eb-df37", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+              {"id": "3cae-fffd-a4cf-2015", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+            ],
+            "infoLinks": [{"name": "HMG", "id": "0ffa-d5f4-6c54-b297", "hidden": false, "targetId": "d513-4f3c-1b2d-cc3b", "type": "profile"}]
+          },
+          {
+            "name": "Jefe de Apoyo",
+            "id": "633e-376c-f6c4-d89a",
+            "hidden": false,
+            "import": true,
+            "sortIndex": 2,
+            "type": "model",
+            "categoryLinks": [{"name": "Jefe de Apoyo", "id": "3e2f-196a-931b-beef", "hidden": false, "primary": false, "targetId": "d18a-eaee-aa98-635f"}],
+            "constraints": [
+              {"id": "f089-9285-d38a-6466", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+              {"id": "1218-491e-e473-905a", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+            ]
+          },
+          {
+            "name": "Cargador",
+            "id": "69a5-3700-1970-2a15",
+            "hidden": false,
+            "import": true,
+            "sortIndex": 2,
+            "type": "model",
+            "categoryLinks": [{"name": "Cargador", "id": "d3b4-d6bc-a46c-d429", "hidden": false, "primary": false, "targetId": "96e1-23ef-6348-0b9a"}],
+            "constraints": [
+              {"id": "3ace-182e-995e-c1e2", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+              {"id": "107f-1ed3-3565-e504", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Ayudante",
+        "id": "08b2-375f-32c6-bd6d",
+        "hidden": false,
+        "import": true,
+        "type": "model",
+        "categoryLinks": [
+          {"name": "Tropas", "id": "dfd3-2253-2bf3-9190", "hidden": false, "primary": true, "targetId": "84b8-b88a-ee8e-23b2"},
+          {"name": "Ayudante", "id": "ab6f-4a71-8b4d-9667", "hidden": false, "primary": false, "targetId": "5747-3c5c-c6c8-4cc5"}
+        ],
+        "constraints": [
+          {"id": "f368-f3f8-fcb8-c392", "field": "selections", "includeChildSelections": false, "scope": "force", "shared": true, "type": "min", "value": 1},
+          {"id": "0fee-caa0-6c1b-bcc9", "field": "selections", "includeChildSelections": false, "scope": "force", "shared": true, "type": "max", "value": 2}
+        ],
+        "entryLinks": [{"name": "Extras", "id": "97b7-e4b4-6fc2-7973", "hidden": false, "import": true, "targetId": "9c90-6f63-71c0-3539", "type": "selectionEntryGroup"}],
+        "infoLinks": [{"name": "Subfusil (SMG)", "id": "9dd9-ea16-475f-339e", "hidden": false, "targetId": "ef3f-a9e7-5e3b-7e21", "type": "profile"}]
+      },
+      {
+        "name": "Equipo de Francotiradores",
+        "id": "88a3-7875-42bd-089c",
+        "hidden": false,
+        "import": true,
+        "subType": "unit-group",
+        "type": "unit",
+        "categoryLinks": [{"name": "Armas de Apoyo", "id": "bd8d-cce2-bd94-48f6", "hidden": false, "primary": true, "targetId": "7ab5-d3c1-6de2-42b0"}],
+        "selectionEntries": [
+          {
+            "name": "Tirador",
+            "id": "4200-2233-e8fe-8a91",
+            "hidden": false,
+            "import": true,
+            "sortIndex": 1,
+            "type": "model",
+            "categoryLinks": [{"name": "Tirador", "id": "3362-2d19-fe73-8619", "hidden": false, "primary": false, "targetId": "d708-d067-cb27-7812"}],
+            "constraints": [
+              {"id": "2bb7-4e4c-be9d-5dd1", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+              {"id": "f91a-aa9a-41b6-711e", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+            ],
+            "infoLinks": [{"name": "Fusil de Precisión", "id": "cbee-463e-12a0-bfb6", "hidden": false, "targetId": "36ba-e852-87cc-d57f", "type": "profile"}]
+          },
+          {
+            "name": "Observador",
+            "id": "bce5-9f7a-1e16-480b",
+            "hidden": false,
+            "import": true,
+            "sortIndex": 2,
+            "type": "model",
+            "categoryLinks": [{"name": "Observador", "id": "afdd-9fa6-54cf-6dc5", "hidden": false, "primary": false, "targetId": "9faf-e27e-9b6f-1e16"}],
+            "constraints": [
+              {"id": "29cf-b5c8-46a5-4439", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+              {"id": "3101-a0a4-397a-9c12", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+            ],
+            "infoLinks": [{"name": "Fusil Semiautomático", "id": "0655-72c1-b3a7-bc8d", "hidden": false, "targetId": "71bc-64bc-198f-ef5e", "type": "profile"}]
+          }
+        ]
+      },
+      {
+        "name": "Lanzallamas",
+        "id": "b560-df98-18e6-6811",
+        "hidden": false,
+        "import": true,
+        "subType": "unit-group",
+        "type": "unit",
+        "categoryLinks": [{"name": "Armas de Apoyo", "id": "dba5-b722-7da1-f9ee", "hidden": false, "primary": true, "targetId": "7ab5-d3c1-6de2-42b0"}],
+        "selectionEntries": [
+          {
+            "name": "Tirador",
+            "id": "220b-3f03-b3b9-7613",
+            "hidden": false,
+            "import": true,
+            "sortIndex": 1,
+            "type": "model",
+            "categoryLinks": [{"name": "Tirador", "id": "ab05-1169-6b86-13d9", "hidden": false, "primary": false, "targetId": "d708-d067-cb27-7812"}],
+            "constraints": [
+              {"id": "2a15-c981-f165-8a46", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+              {"id": "fd0c-ae5f-eacb-0931", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+            ],
+            "infoLinks": [{"name": "Lanzallamas", "id": "a1f1-98a8-c4ce-0d0a", "hidden": false, "targetId": "0f6e-e8da-df0f-5f26", "type": "profile"}]
+          },
+          {
+            "name": "Cargador",
+            "id": "3e3f-d6cd-c838-df74",
+            "hidden": false,
+            "import": true,
+            "sortIndex": 2,
+            "type": "model",
+            "categoryLinks": [{"name": "Cargador", "id": "9826-ad78-fb20-ab94", "hidden": false, "primary": false, "targetId": "96e1-23ef-6348-0b9a"}],
+            "constraints": [
+              {"id": "fbe4-7798-e221-9c4b", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+              {"id": "c033-0c5e-21cc-9589", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Líder",
+        "id": "6ba0-8829-68a2-f510",
+        "hidden": false,
+        "import": true,
+        "type": "model",
+        "categoryLinks": [
+          {"name": "Tropas", "id": "a6ed-2cd9-2343-1e5f", "hidden": false, "primary": true, "targetId": "84b8-b88a-ee8e-23b2"},
+          {"name": "Lider", "id": "d89b-e1c1-73d5-a18e", "hidden": false, "primary": false, "targetId": "6d96-3fec-65e5-3f58"}
+        ],
+        "constraints": [
+          {"id": "cb66-4920-0a3b-87aa", "field": "selections", "includeChildSelections": false, "scope": "force", "shared": true, "type": "max", "value": 1},
+          {"id": "6736-1cf3-b2ae-e6a6", "field": "selections", "includeChildSelections": true, "scope": "force", "shared": true, "type": "min", "value": 1}
+        ],
+        "entryLinks": [{"name": "Extras", "id": "5722-5a49-bdb3-aa0f", "hidden": false, "import": true, "targetId": "9c90-6f63-71c0-3539", "type": "selectionEntryGroup"}],
+        "infoLinks": [{"name": "Subfusil (SMG)", "id": "5305-5db7-9c4b-645d", "hidden": false, "targetId": "ef3f-a9e7-5e3b-7e21", "type": "profile"}]
+      },
+      {
+        "name": "Mortero Ligero",
+        "id": "30ce-fddd-0c8d-8004",
+        "hidden": false,
+        "import": true,
+        "subType": "unit-group",
+        "type": "unit",
+        "categoryLinks": [{"name": "Armas de Apoyo", "id": "d441-e1b6-4c83-ab71", "hidden": false, "primary": true, "targetId": "7ab5-d3c1-6de2-42b0"}],
+        "selectionEntries": [
+          {
+            "name": "Tirador",
+            "id": "0da2-aa09-5d19-2968",
+            "hidden": false,
+            "import": true,
+            "sortIndex": 1,
+            "type": "model",
+            "categoryLinks": [{"name": "Tirador", "id": "c265-abd9-1022-35cc", "hidden": false, "primary": false, "targetId": "d708-d067-cb27-7812"}],
+            "constraints": [
+              {"id": "915f-3085-6a16-cd6e", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+              {"id": "694b-ac08-1847-0e8e", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+            ],
+            "infoLinks": [{"name": "Mortero 60 mm", "id": "5d23-cff6-0ab4-3458", "hidden": false, "targetId": "6ab2-636c-23bb-2d6b", "type": "profile"}]
+          },
+          {
+            "name": "Jefe de Apoyo",
+            "id": "1cf4-ae39-d017-a69a",
+            "hidden": false,
+            "import": true,
+            "sortIndex": 2,
+            "type": "model",
+            "categoryLinks": [{"name": "Jefe de Apoyo", "id": "55fa-b62f-be0b-b72f", "hidden": false, "primary": false, "targetId": "d18a-eaee-aa98-635f"}],
+            "constraints": [
+              {"id": "6dd3-1c9d-3318-d297", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+              {"id": "afd3-3744-9cef-8120", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+            ]
+          },
+          {
+            "name": "Cargador",
+            "id": "3fc8-103e-3883-aa5e",
+            "hidden": false,
+            "import": true,
+            "sortIndex": 2,
+            "type": "model",
+            "categoryLinks": [{"name": "Cargador", "id": "a69d-cf8d-6d7b-80eb", "hidden": false, "primary": false, "targetId": "96e1-23ef-6348-0b9a"}],
+            "constraints": [
+              {"id": "8210-a11b-a235-7bf4", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+              {"id": "bb31-6312-94ec-bafe", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Mortero Medio",
+        "id": "456e-d3fb-9832-a585",
+        "hidden": false,
+        "import": true,
+        "subType": "unit-group",
+        "type": "unit",
+        "categoryLinks": [{"name": "Armas de Apoyo", "id": "e5ca-100c-7261-e5e5", "hidden": false, "primary": true, "targetId": "7ab5-d3c1-6de2-42b0"}],
+        "selectionEntries": [
+          {
+            "name": "Tirador",
+            "id": "febb-83f8-7be1-e74c",
+            "hidden": false,
+            "import": true,
+            "sortIndex": 1,
+            "type": "model",
+            "categoryLinks": [{"name": "Tirador", "id": "1947-e3cc-3b13-c070", "hidden": false, "primary": false, "targetId": "d708-d067-cb27-7812"}],
+            "constraints": [
+              {"id": "2510-5d1a-f270-6099", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+              {"id": "4fd5-8bed-2795-3718", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+            ],
+            "infoLinks": [{"name": "Mortero 80 mm", "id": "1e0d-400b-e495-32a0", "hidden": false, "targetId": "4b6a-1264-b631-7263", "type": "profile"}]
+          },
+          {
+            "name": "Jefe de Apoyo",
+            "id": "c5cb-30f4-ff32-bb12",
+            "hidden": false,
+            "import": true,
+            "sortIndex": 2,
+            "type": "model",
+            "categoryLinks": [{"name": "Jefe de Apoyo", "id": "c500-02f4-3e74-2589", "hidden": false, "primary": false, "targetId": "d18a-eaee-aa98-635f"}],
+            "constraints": [
+              {"id": "4cb0-5283-f212-fe46", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+              {"id": "f5a9-35cf-80bc-dfea", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+            ]
+          },
+          {
+            "name": "Cargador",
+            "id": "51c1-7812-98b9-8cf8",
+            "hidden": false,
+            "import": true,
+            "sortIndex": 2,
+            "type": "model",
+            "categoryLinks": [{"name": "Cargador", "id": "a64d-f956-4c4a-c6f0", "hidden": false, "primary": false, "targetId": "96e1-23ef-6348-0b9a"}],
+            "constraints": [
+              {"id": "cf19-d1e0-8a3c-49d7", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+              {"id": "4621-4866-b20d-072e", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Mortero Pesado",
+        "id": "aede-8dd4-7d71-0957",
+        "hidden": false,
+        "import": true,
+        "subType": "unit-group",
+        "type": "unit",
+        "categoryLinks": [{"name": "Armas de Apoyo", "id": "ef42-081b-1332-18bc", "hidden": false, "primary": true, "targetId": "7ab5-d3c1-6de2-42b0"}],
+        "modifiers": [
+          {
+            "field": "hidden",
+            "type": "set",
+            "value": false,
+            "conditionGroups": [
+              {
+                "type": "or",
+                "conditions": [
+                  {
+                    "childId": "1aa4-c366-b73b-3632",
+                    "childName": "Waffen SS",
+                    "field": "selections",
+                    "includeChildForces": false,
+                    "includeChildSelections": true,
+                    "scope": "force",
+                    "shared": true,
+                    "type": "instanceOf",
+                    "value": 1
+                  },
+                  {
+                    "childId": "c314-2bf7-e3ad-a64f",
+                    "childName": "Ejército Regular",
+                    "field": "selections",
+                    "includeChildForces": false,
+                    "includeChildSelections": true,
+                    "scope": "force",
+                    "shared": true,
+                    "type": "instanceOf",
+                    "value": 1
+                  },
+                  {
+                    "childId": "c211-5d39-539a-90f7",
+                    "childName": "Ejercito Regular",
+                    "field": "selections",
+                    "includeChildForces": false,
+                    "includeChildSelections": true,
+                    "scope": "force",
+                    "shared": true,
+                    "type": "instanceOf",
+                    "value": 1
+                  },
+                  {
+                    "childId": "47c3-5d30-ecf5-fb3e",
+                    "childName": "Ejército Regular",
+                    "field": "selections",
+                    "includeChildForces": false,
+                    "includeChildSelections": true,
+                    "scope": "force",
+                    "shared": true,
+                    "type": "instanceOf",
+                    "value": 1
+                  },
+                  {
+                    "childId": "46e6-bc31-38e7-9ae1",
+                    "childName": "Infantería de Marina",
+                    "field": "selections",
+                    "includeChildForces": false,
+                    "includeChildSelections": true,
+                    "scope": "force",
+                    "shared": true,
+                    "type": "instanceOf",
+                    "value": 1
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "selectionEntries": [
+          {
+            "name": "Tirador",
+            "id": "7101-9fdf-3463-ffa3",
+            "hidden": false,
+            "import": true,
+            "sortIndex": 1,
+            "type": "model",
+            "categoryLinks": [{"name": "Tirador", "id": "c373-85a1-b5f2-5165", "hidden": false, "primary": false, "targetId": "d708-d067-cb27-7812"}],
+            "constraints": [
+              {"id": "6a71-71de-2afc-7e91", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+              {"id": "3a01-90c3-8405-9100", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+            ],
+            "infoLinks": [{"name": "Mortero 120 mm", "id": "714c-7ac3-878c-3c01", "hidden": false, "targetId": "8abc-1f6b-9bcd-da65", "type": "profile"}]
+          },
+          {
+            "name": "Jefe de Apoyo",
+            "id": "f08e-d177-272c-533d",
+            "hidden": false,
+            "import": true,
+            "sortIndex": 2,
+            "type": "model",
+            "categoryLinks": [{"name": "Jefe de Apoyo", "id": "a057-724c-25fb-eb3a", "hidden": false, "primary": false, "targetId": "d18a-eaee-aa98-635f"}],
+            "constraints": [
+              {"id": "120a-81aa-b09b-efb3", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+              {"id": "7c61-6d62-b7c7-57ba", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+            ]
+          },
+          {
+            "name": "Cargador",
+            "id": "ba4f-7438-2306-054c",
+            "hidden": false,
+            "import": true,
+            "sortIndex": 2,
+            "type": "model",
+            "categoryLinks": [{"name": "Cargador", "id": "a22f-904e-a5a2-4163", "hidden": false, "primary": false, "targetId": "96e1-23ef-6348-0b9a"}],
+            "constraints": [
+              {"id": "75a0-adb6-3c20-c508", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+              {"id": "3d0b-5385-4e33-9b15", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Tirador Designado",
+        "id": "f0de-041b-afd1-2b53",
+        "hidden": false,
+        "import": true,
+        "type": "model",
+        "categoryLinks": [
+          {"name": "Tropas", "id": "55ec-12a0-02ad-3b2e", "hidden": false, "primary": true, "targetId": "84b8-b88a-ee8e-23b2"},
+          {"name": "Tirador Designado", "id": "cda7-013d-cb54-00dc", "hidden": false, "primary": false, "targetId": "3bee-489b-662a-a604"}
+        ],
+        "constraints": [{"id": "653c-e1b0-1b1c-f254", "field": "selections", "includeChildSelections": false, "scope": "force", "shared": true, "type": "max", "value": 1}],
+        "entryLinks": [{"name": "Extras", "id": "4419-dea4-d92b-5eeb", "hidden": false, "import": true, "targetId": "9c90-6f63-71c0-3539", "type": "selectionEntryGroup"}],
+        "infoLinks": [{"name": "Fusil de Precisión", "id": "821e-8c91-7806-b4d1", "hidden": false, "targetId": "36ba-e852-87cc-d57f", "type": "profile"}]
+      },
+      {
+        "name": "Soldado con Fusil Semiautomático",
+        "id": "7f09-d060-d033-fb10",
+        "hidden": false,
+        "import": true,
+        "type": "model",
+        "categoryLinks": [
+          {"name": "Tropas", "id": "22ac-bc36-1d9a-c76e", "hidden": false, "primary": true, "targetId": "84b8-b88a-ee8e-23b2"},
+          {"name": "Soldado", "id": "2937-92ba-320a-c9a2", "hidden": false, "primary": false, "targetId": "fc1a-85d4-18f6-e078"}
+        ],
+        "entryLinks": [{"name": "Extras", "id": "5d56-4ff5-a1a8-be83", "hidden": false, "import": true, "targetId": "9c90-6f63-71c0-3539", "type": "selectionEntryGroup"}],
+        "infoLinks": [{"name": "Fusil Semiautomático", "id": "77f6-1dca-e889-6d4c", "hidden": false, "targetId": "71bc-64bc-198f-ef5e", "type": "profile"}]
+      },
+      {
+        "name": "Soldado con LMG",
+        "id": "167c-7d9d-86d8-d70b",
+        "hidden": false,
+        "import": true,
+        "type": "model",
+        "categoryLinks": [
+          {"name": "Tropas", "id": "d286-15a9-9cc2-e438", "hidden": false, "primary": true, "targetId": "84b8-b88a-ee8e-23b2"},
+          {"name": "Soldado", "id": "475e-0c28-4308-7e62", "hidden": false, "primary": false, "targetId": "fc1a-85d4-18f6-e078"}
+        ],
+        "entryLinks": [{"name": "Extras", "id": "06f1-fbef-f334-9d1a", "hidden": false, "import": true, "targetId": "9c90-6f63-71c0-3539", "type": "selectionEntryGroup"}],
+        "infoLinks": [
+          {
+            "name": "LMG",
+            "id": "2bf6-9dc1-84fb-d957",
+            "hidden": false,
+            "targetId": "3650-8d00-f025-3054",
+            "type": "profile",
+            "modifiers": [
+              {
+                "field": "dc45-97b4-54a3-d8bd",
+                "type": "set",
+                "value": "MG-34",
+                "conditions": [
+                  {
+                    "childId": "82b5-7df9-b6c9-8e3d",
+                    "childName": "Alemania",
+                    "field": "selections",
+                    "includeChildSelections": true,
+                    "scope": "primary-catalogue",
+                    "shared": true,
+                    "type": "instanceOf",
+                    "value": 1
+                  }
+                ]
+              },
+              {
+                "field": "dc45-97b4-54a3-d8bd",
+                "type": "set",
+                "value": "Cal.30",
+                "conditions": [
+                  {
+                    "childId": "b214-ff29-ec1d-132f",
+                    "childName": "Estados Unidos",
+                    "field": "selections",
+                    "includeChildSelections": true,
+                    "scope": "primary-catalogue",
+                    "shared": true,
+                    "type": "instanceOf",
+                    "value": 1
+                  }
+                ]
+              },
+              {
+                "field": "dc45-97b4-54a3-d8bd",
+                "type": "set",
+                "value": "Bren",
+                "conditions": [
+                  {
+                    "childId": "ae5f-6b05-d398-11f5",
+                    "childName": "Reino Unido",
+                    "field": "selections",
+                    "includeChildSelections": true,
+                    "scope": "primary-catalogue",
+                    "shared": true,
+                    "type": "instanceOf",
+                    "value": 1
+                  }
+                ]
+              },
+              {
+                "field": "dc45-97b4-54a3-d8bd",
+                "type": "set",
+                "value": "DP-27",
+                "conditions": [
+                  {
+                    "childId": "2119-439b-b3de-1f85",
+                    "childName": "URSS",
+                    "field": "selections",
+                    "includeChildSelections": true,
+                    "scope": "primary-catalogue",
+                    "shared": true,
+                    "type": "instanceOf",
+                    "value": 1
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Soldado con Subfusil (SMG)",
+        "id": "89c3-6fa3-96a3-13d3",
+        "hidden": false,
+        "import": true,
+        "type": "model",
+        "categoryLinks": [
+          {"name": "Tropas", "id": "1713-19b9-74cf-552f", "hidden": false, "primary": true, "targetId": "84b8-b88a-ee8e-23b2"},
+          {"name": "Soldado", "id": "b826-59ce-00a5-5d41", "hidden": false, "primary": false, "targetId": "fc1a-85d4-18f6-e078"}
+        ],
+        "entryLinks": [{"name": "Extras", "id": "2afd-79f1-dd9f-70b6", "hidden": false, "import": true, "targetId": "9c90-6f63-71c0-3539", "type": "selectionEntryGroup"}],
+        "infoLinks": [
+          {
+            "name": "Subfusil (SMG)",
+            "id": "0097-0b45-f60e-68fe",
+            "hidden": false,
+            "targetId": "ef3f-a9e7-5e3b-7e21",
+            "type": "profile",
+            "modifiers": [
+              {
+                "field": "dc45-97b4-54a3-d8bd",
+                "type": "set",
+                "value": "MP40",
+                "conditions": [
+                  {
+                    "childId": "82b5-7df9-b6c9-8e3d",
+                    "childName": "Alemania",
+                    "field": "selections",
+                    "includeChildSelections": true,
+                    "scope": "primary-catalogue",
+                    "shared": true,
+                    "type": "instanceOf",
+                    "value": 1
+                  }
+                ]
+              },
+              {
+                "field": "dc45-97b4-54a3-d8bd",
+                "type": "set",
+                "value": "Thompson / M3",
+                "conditions": [
+                  {
+                    "childId": "b214-ff29-ec1d-132f",
+                    "childName": "Estados Unidos",
+                    "field": "selections",
+                    "includeChildSelections": true,
+                    "scope": "primary-catalogue",
+                    "shared": true,
+                    "type": "instanceOf",
+                    "value": 1
+                  }
+                ]
+              },
+              {
+                "field": "dc45-97b4-54a3-d8bd",
+                "type": "set",
+                "value": "Sten",
+                "conditions": [
+                  {
+                    "childId": "ae5f-6b05-d398-11f5",
+                    "childName": "Reino Unido",
+                    "field": "selections",
+                    "includeChildSelections": true,
+                    "scope": "primary-catalogue",
+                    "shared": true,
+                    "type": "instanceOf",
+                    "value": 1
+                  }
+                ]
+              },
+              {
+                "field": "dc45-97b4-54a3-d8bd",
+                "type": "set",
+                "value": "PPSh-41",
+                "conditions": [
+                  {
+                    "childId": "2119-439b-b3de-1f85",
+                    "childName": "URSS",
+                    "field": "selections",
+                    "includeChildSelections": true,
+                    "scope": "primary-catalogue",
+                    "shared": true,
+                    "type": "instanceOf",
+                    "value": 1
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Soldado con Fusil",
+        "id": "3a6c-169a-0f5c-ce6d",
+        "hidden": false,
+        "import": true,
+        "type": "model",
+        "categoryLinks": [
+          {"name": "Tropas", "id": "5cd6-f6fa-1334-58f2", "hidden": false, "primary": true, "targetId": "84b8-b88a-ee8e-23b2"},
+          {"name": "Soldado", "id": "08b2-4dee-4da7-15ce", "hidden": false, "primary": false, "targetId": "fc1a-85d4-18f6-e078"}
+        ],
+        "entryLinks": [{"name": "Extras", "id": "afda-4708-1ad5-5edd", "hidden": false, "import": true, "targetId": "9c90-6f63-71c0-3539", "type": "selectionEntryGroup"}],
+        "infoLinks": [
+          {
+            "name": "Fusil",
+            "id": "d894-72b3-6800-82af",
+            "hidden": false,
+            "targetId": "db0f-5be5-5919-9084",
+            "type": "profile",
+            "modifiers": [
+              {
+                "field": "dc45-97b4-54a3-d8bd",
+                "type": "set",
+                "value": "Kar98K",
+                "conditions": [
+                  {
+                    "childId": "82b5-7df9-b6c9-8e3d",
+                    "childName": "Alemania",
+                    "field": "selections",
+                    "includeChildSelections": true,
+                    "scope": "primary-catalogue",
+                    "shared": true,
+                    "type": "instanceOf",
+                    "value": 1
+                  }
+                ]
+              },
+              {
+                "field": "dc45-97b4-54a3-d8bd",
+                "type": "set",
+                "value": "Type 99",
+                "conditions": [
+                  {
+                    "childId": "05b2-fd73-b4f3-84f2",
+                    "childName": "Japón",
+                    "field": "selections",
+                    "includeChildSelections": true,
+                    "scope": "primary-catalogue",
+                    "shared": true,
+                    "type": "instanceOf",
+                    "value": 1
+                  }
+                ]
+              },
+              {
+                "field": "dc45-97b4-54a3-d8bd",
+                "type": "set",
+                "value": "Lee-Enfield",
+                "conditions": [
+                  {
+                    "childId": "ae5f-6b05-d398-11f5",
+                    "childName": "Reino Unido",
+                    "field": "selections",
+                    "includeChildSelections": true,
+                    "scope": "primary-catalogue",
+                    "shared": true,
+                    "type": "instanceOf",
+                    "value": 1
+                  }
+                ]
+              },
+              {
+                "field": "dc45-97b4-54a3-d8bd",
+                "type": "set",
+                "value": "Mosin-Nagant",
+                "conditions": [
+                  {
+                    "childId": "2119-439b-b3de-1f85",
+                    "childName": "URSS",
+                    "field": "selections",
+                    "includeChildSelections": true,
+                    "scope": "primary-catalogue",
+                    "shared": true,
+                    "type": "instanceOf",
+                    "value": 1
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Soldado con Fusil de Asalto",
+        "id": "08e5-09f4-72d9-1be1",
+        "hidden": false,
+        "import": true,
+        "type": "model",
+        "categoryLinks": [
+          {"name": "Tropas", "id": "3528-1d55-6781-169f", "hidden": false, "primary": true, "targetId": "84b8-b88a-ee8e-23b2"},
+          {"name": "Soldado", "id": "5410-c961-5982-87fd", "hidden": false, "primary": false, "targetId": "fc1a-85d4-18f6-e078"}
+        ],
+        "constraints": [{"id": "375c-b7fd-4e76-6a70", "field": "selections", "includeChildSelections": true, "scope": "force", "shared": true, "type": "max", "value": 0}],
+        "entryLinks": [{"name": "Extras", "id": "59ef-24fd-b8be-d124", "hidden": false, "import": true, "targetId": "9c90-6f63-71c0-3539", "type": "selectionEntryGroup"}],
+        "infoLinks": [{"name": "Fusil de asalto", "id": "be5b-ec4c-c29b-f251", "hidden": false, "targetId": "4287-c51c-084e-24a2", "type": "profile"}],
+        "modifiers": [
+          {
+            "field": "375c-b7fd-4e76-6a70",
+            "type": "increment",
+            "value": 1,
+            "repeats": [
+              {
+                "childId": "fc1a-85d4-18f6-e078",
+                "childName": "Soldado",
+                "field": "selections",
+                "includeChildSelections": true,
+                "repeats": 1,
+                "roundUp": false,
+                "scope": "force",
+                "shared": true,
+                "value": 4
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Soldado con Fusil Semiautomático + Lanzagranadas",
+        "id": "5565-fb2c-5f00-88f2",
+        "hidden": false,
+        "import": true,
+        "type": "model",
+        "categoryLinks": [
+          {"name": "Tropas", "id": "b1b8-86b4-cc8e-cec9", "hidden": false, "primary": true, "targetId": "84b8-b88a-ee8e-23b2"},
+          {"name": "Soldado", "id": "4904-0632-1069-64f6", "hidden": false, "primary": false, "targetId": "fc1a-85d4-18f6-e078"}
+        ],
+        "entryLinks": [{"name": "Extras", "id": "c9bb-f280-8d9a-209c", "hidden": false, "import": true, "targetId": "9c90-6f63-71c0-3539", "type": "selectionEntryGroup"}],
+        "infoLinks": [
+          {"name": "Fusil Semiautomático", "id": "4154-0ec5-cffa-b6a7", "hidden": false, "targetId": "71bc-64bc-198f-ef5e", "type": "profile"},
+          {"name": "Lanzagranadas", "id": "a772-7100-6204-eac0", "hidden": false, "targetId": "b86e-2071-256c-e6c3", "type": "profile"}
+        ]
+      },
+      {
+        "name": "Soldado con Fusil + Lanzagranadas",
+        "id": "517a-f489-5c01-0616",
+        "hidden": false,
+        "import": true,
+        "type": "model",
+        "categoryLinks": [
+          {"name": "Tropas", "id": "9f7d-2f96-a01a-93e9", "hidden": false, "primary": true, "targetId": "84b8-b88a-ee8e-23b2"},
+          {"name": "Soldado", "id": "bef1-f9d6-b3fa-f9c2", "hidden": false, "primary": false, "targetId": "fc1a-85d4-18f6-e078"}
+        ],
+        "entryLinks": [{"name": "Extras", "id": "0434-6945-80ba-5414", "hidden": false, "import": true, "targetId": "9c90-6f63-71c0-3539", "type": "selectionEntryGroup"}],
+        "infoLinks": [
+          {
+            "name": "Fusil",
+            "id": "f56b-b351-bb9d-9ebc",
+            "hidden": false,
+            "targetId": "db0f-5be5-5919-9084",
+            "type": "profile",
+            "modifiers": [
+              {
+                "field": "dc45-97b4-54a3-d8bd",
+                "type": "set",
+                "value": "Kar98K",
+                "conditions": [
+                  {
+                    "childId": "82b5-7df9-b6c9-8e3d",
+                    "childName": "Alemania",
+                    "field": "selections",
+                    "includeChildSelections": true,
+                    "scope": "primary-catalogue",
+                    "shared": true,
+                    "type": "instanceOf",
+                    "value": 1
+                  }
+                ]
+              },
+              {
+                "field": "dc45-97b4-54a3-d8bd",
+                "type": "set",
+                "value": "Type 99",
+                "conditions": [
+                  {
+                    "childId": "05b2-fd73-b4f3-84f2",
+                    "childName": "Japón",
+                    "field": "selections",
+                    "includeChildSelections": true,
+                    "scope": "primary-catalogue",
+                    "shared": true,
+                    "type": "instanceOf",
+                    "value": 1
+                  }
+                ]
+              },
+              {
+                "field": "dc45-97b4-54a3-d8bd",
+                "type": "set",
+                "value": "Lee-Enfield",
+                "conditions": [
+                  {
+                    "childId": "ae5f-6b05-d398-11f5",
+                    "childName": "Reino Unido",
+                    "field": "selections",
+                    "includeChildSelections": true,
+                    "scope": "primary-catalogue",
+                    "shared": true,
+                    "type": "instanceOf",
+                    "value": 1
+                  }
+                ]
+              }
+            ]
+          },
+          {"name": "Lanzagranadas", "id": "333d-cdec-898d-c1d9", "hidden": false, "targetId": "b86e-2071-256c-e6c3", "type": "profile"}
+        ]
+      },
+      {
+        "name": "Soldado con Pistola",
+        "id": "141e-83d2-adee-bf41",
+        "hidden": false,
+        "import": true,
+        "type": "model",
+        "categoryLinks": [
+          {"name": "Tropas", "id": "4d41-de71-2933-fa77", "hidden": false, "primary": true, "targetId": "84b8-b88a-ee8e-23b2"},
+          {"name": "Soldado", "id": "d342-0cb0-16be-654c", "hidden": false, "primary": false, "targetId": "fc1a-85d4-18f6-e078"}
+        ],
+        "entryLinks": [{"name": "Extras", "id": "ab64-5155-7183-20cc", "hidden": false, "import": true, "targetId": "9c90-6f63-71c0-3539", "type": "selectionEntryGroup"}],
+        "infoLinks": [{"name": "Pistola", "id": "da25-df46-f2ae-3370", "hidden": false, "targetId": "3d12-c54f-917d-a64b", "type": "profile"}]
+      },
+      {
+        "name": "Soldado con Escopeta",
+        "id": "e71c-d1f4-3009-784e",
+        "hidden": false,
+        "import": true,
+        "type": "model",
+        "categoryLinks": [
+          {"name": "Tropas", "id": "3640-6a51-5853-2408", "hidden": false, "primary": true, "targetId": "84b8-b88a-ee8e-23b2"},
+          {"name": "Soldado", "id": "5ef9-441d-b9ae-61a0", "hidden": false, "primary": false, "targetId": "fc1a-85d4-18f6-e078"}
+        ],
+        "entryLinks": [{"name": "Extras", "id": "3d09-1b47-18ca-d120", "hidden": false, "import": true, "targetId": "9c90-6f63-71c0-3539", "type": "selectionEntryGroup"}],
+        "infoLinks": [{"name": "Escopeta", "id": "3633-3966-3663-87cc", "hidden": false, "targetId": "f0e9-abdd-2600-0d55", "type": "profile"}]
+      }
+    ],
+    "sharedSelectionEntryGroups": [
+      {
+        "name": "Extras",
+        "id": "9c90-6f63-71c0-3539",
+        "collapsible": true,
+        "hidden": false,
+        "entryLinks": [
+          {
+            "name": "Cóctel Molotov",
+            "id": "e135-8236-e662-3923",
+            "hidden": false,
+            "import": true,
+            "sortIndex": 2,
+            "targetId": "b26e-42b3-ae8c-394c",
+            "type": "selectionEntry"
+          },
+          {
+            "name": "Cohetes Extra",
+            "id": "1d2f-ecd6-1acc-a742",
+            "hidden": false,
+            "import": true,
+            "sortIndex": 6,
+            "targetId": "82b5-07fe-b06d-05ae",
+            "type": "selectionEntry"
+          },
+          {
+            "name": "Granadas",
+            "id": "6bcb-a7ae-176e-8aac",
+            "hidden": false,
+            "import": true,
+            "page": "",
+            "sortIndex": 1,
+            "targetId": "4515-49bb-e615-c7a0",
+            "type": "selectionEntry"
+          },
+          {
+            "name": "Granadas de Lanzagrandas",
+            "id": "64d0-8065-c34f-367e",
+            "hidden": false,
+            "import": true,
+            "sortIndex": 3,
+            "targetId": "e13d-c5a6-8f59-e746",
+            "type": "selectionEntry"
+          },
+          {
+            "name": "Lanzacohetes Recargable",
+            "id": "9f11-ae8b-73e6-4a53",
+            "hidden": false,
+            "import": true,
+            "sortIndex": 4,
+            "targetId": "4759-da8f-40fd-3a93",
+            "type": "selectionEntry"
+          },
+          {
+            "name": "Perro Adiestrado",
+            "id": "2f17-62c5-4f92-8409",
+            "hidden": false,
+            "import": true,
+            "sortIndex": 7,
+            "targetId": "a75b-1618-2fcd-7378",
+            "type": "selectionEntry"
+          },
+          {
+            "name": "Lanzacohetes Deshechable",
+            "id": "f686-d78e-7328-57af",
+            "hidden": false,
+            "import": true,
+            "sortIndex": 5,
+            "targetId": "6973-87cb-e5ec-4cbf",
+            "type": "selectionEntry"
+          }
+        ]
+      }
+    ]
+  }
+}

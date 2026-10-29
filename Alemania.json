@@ -1,0 +1,622 @@
+{
+  "catalogue": {
+    "name": "Alemania",
+    "id": "82b5-7df9-b6c9-8e3d",
+    "battleScribeVersion": "2.03",
+    "gameSystemId": "sys-3a9e-05ac-a496-2bc9",
+    "gameSystemRevision": 1,
+    "library": false,
+    "revision": 1,
+    "type": "catalogue",
+    "entryLinks": [
+      {
+        "name": "Líder",
+        "id": "fcaa-242b-0eb2-8a1f",
+        "hidden": false,
+        "import": true,
+        "targetId": "6ba0-8829-68a2-f510",
+        "type": "selectionEntry",
+        "costs": [{"name": "Puntos", "typeId": "5ff7-57ed-1086-b4b0", "value": 65}],
+        "modifiers": [
+          {
+            "field": "5ff7-57ed-1086-b4b0",
+            "type": "set",
+            "value": 60,
+            "conditions": [
+              {
+                "childId": "1aa4-c366-b73b-3632",
+                "childName": "Waffen SS",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": true,
+                "scope": "force",
+                "shared": true,
+                "type": "instanceOf",
+                "value": 1
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Ayudante",
+        "id": "c38a-c2ae-9b1e-e37f",
+        "hidden": false,
+        "import": true,
+        "targetId": "08b2-375f-32c6-bd6d",
+        "type": "selectionEntry",
+        "costs": [{"name": "Puntos", "typeId": "5ff7-57ed-1086-b4b0", "value": 60}],
+        "modifiers": [
+          {
+            "field": "5ff7-57ed-1086-b4b0",
+            "type": "set",
+            "value": 55,
+            "conditions": [
+              {
+                "childId": "1aa4-c366-b73b-3632",
+                "childName": "Waffen SS",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": true,
+                "scope": "force",
+                "shared": true,
+                "type": "instanceOf",
+                "value": 1
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Soldado con Fusil",
+        "id": "595a-bfcd-1d50-2448",
+        "hidden": false,
+        "import": true,
+        "targetId": "3a6c-169a-0f5c-ce6d",
+        "type": "selectionEntry",
+        "costs": [{"name": "Puntos", "typeId": "5ff7-57ed-1086-b4b0", "value": 35}],
+        "modifiers": [
+          {
+            "field": "5ff7-57ed-1086-b4b0",
+            "type": "set",
+            "value": 30,
+            "conditions": [
+              {
+                "childId": "1aa4-c366-b73b-3632",
+                "childName": "Waffen SS",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": true,
+                "scope": "force",
+                "shared": true,
+                "type": "instanceOf",
+                "value": 1
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Soldado con LMG",
+        "id": "1be7-9743-d763-8d73",
+        "hidden": false,
+        "import": true,
+        "targetId": "167c-7d9d-86d8-d70b",
+        "type": "selectionEntry",
+        "constraints": [{"id": "4a0b-45ff-1014-6ee4", "field": "selections", "includeChildSelections": true, "scope": "force", "shared": true, "type": "max", "value": 0}],
+        "costs": [{"name": "Puntos", "typeId": "5ff7-57ed-1086-b4b0", "value": 55}],
+        "modifiers": [
+          {
+            "field": "5ff7-57ed-1086-b4b0",
+            "type": "set",
+            "value": 50,
+            "conditions": [
+              {
+                "childId": "1aa4-c366-b73b-3632",
+                "childName": "Waffen SS",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": true,
+                "scope": "force",
+                "shared": true,
+                "type": "instanceOf",
+                "value": 1
+              }
+            ]
+          },
+          {
+            "field": "4a0b-45ff-1014-6ee4",
+            "type": "increment",
+            "value": 1,
+            "repeats": [
+              {
+                "childId": "fc1a-85d4-18f6-e078",
+                "childName": "Soldado",
+                "field": "selections",
+                "includeChildSelections": true,
+                "repeats": 1,
+                "roundUp": false,
+                "scope": "force",
+                "shared": true,
+                "value": 8
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Soldado con Fusil de Asalto",
+        "id": "e9b9-7868-4d79-62e5",
+        "hidden": false,
+        "import": true,
+        "targetId": "08e5-09f4-72d9-1be1",
+        "type": "selectionEntry",
+        "costs": [{"name": "Puntos", "typeId": "5ff7-57ed-1086-b4b0", "value": 45}],
+        "modifiers": [
+          {
+            "field": "5ff7-57ed-1086-b4b0",
+            "type": "set",
+            "value": 40,
+            "conditions": [
+              {
+                "childId": "1aa4-c366-b73b-3632",
+                "childName": "Waffen SS",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": true,
+                "scope": "force",
+                "shared": true,
+                "type": "instanceOf",
+                "value": 1
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Tirador Designado",
+        "id": "ce32-a6eb-fe97-c1f0",
+        "hidden": false,
+        "import": true,
+        "targetId": "f0de-041b-afd1-2b53",
+        "type": "selectionEntry",
+        "costs": [{"name": "Puntos", "typeId": "5ff7-57ed-1086-b4b0", "value": 45}],
+        "modifiers": [
+          {
+            "field": "5ff7-57ed-1086-b4b0",
+            "type": "set",
+            "value": 40,
+            "conditions": [
+              {
+                "childId": "1aa4-c366-b73b-3632",
+                "childName": "Waffen SS",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": true,
+                "scope": "force",
+                "shared": true,
+                "type": "instanceOf",
+                "value": 1
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Soldado con Subfusil (SMG)",
+        "id": "1cc1-756d-89a3-b567",
+        "hidden": false,
+        "import": true,
+        "targetId": "89c3-6fa3-96a3-13d3",
+        "type": "selectionEntry",
+        "costs": [{"name": "Puntos", "typeId": "5ff7-57ed-1086-b4b0", "value": 40}],
+        "modifiers": [
+          {
+            "field": "5ff7-57ed-1086-b4b0",
+            "type": "set",
+            "value": 35,
+            "conditions": [
+              {
+                "childId": "1aa4-c366-b73b-3632",
+                "childName": "Waffen SS",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": true,
+                "scope": "force",
+                "shared": true,
+                "type": "instanceOf",
+                "value": 1
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Ametralladora Pesada (HMG)",
+        "id": "f1b3-0df0-0f36-b517",
+        "hidden": false,
+        "import": true,
+        "targetId": "7a12-244d-f55a-2bdd",
+        "type": "selectionEntry",
+        "costs": [{"name": "Puntos", "typeId": "5ff7-57ed-1086-b4b0", "value": 175}],
+        "modifiers": [
+          {"field": "name", "join": " - ", "type": "append", "value": "MG-42"},
+          {
+            "field": "5ff7-57ed-1086-b4b0",
+            "type": "set",
+            "value": 160,
+            "conditions": [
+              {
+                "childId": "1aa4-c366-b73b-3632",
+                "childName": "Waffen SS",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": true,
+                "scope": "force",
+                "shared": true,
+                "type": "instanceOf",
+                "value": 1
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Equipo de Francotiradores",
+        "id": "51cc-dd16-64fa-92fd",
+        "hidden": false,
+        "import": true,
+        "targetId": "88a3-7875-42bd-089c",
+        "type": "selectionEntry",
+        "costs": [{"name": "Puntos", "typeId": "5ff7-57ed-1086-b4b0", "value": 130}],
+        "modifiers": [
+          {
+            "field": "5ff7-57ed-1086-b4b0",
+            "type": "set",
+            "value": 120,
+            "conditions": [
+              {
+                "childId": "1aa4-c366-b73b-3632",
+                "childName": "Waffen SS",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": true,
+                "scope": "force",
+                "shared": true,
+                "type": "instanceOf",
+                "value": 1
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Ametralladora Media (MMG)",
+        "id": "277e-6d08-6141-4446",
+        "hidden": false,
+        "import": true,
+        "targetId": "9a55-7e3c-2d39-7357",
+        "type": "selectionEntry",
+        "costs": [{"name": "Puntos", "typeId": "5ff7-57ed-1086-b4b0", "value": 100}],
+        "modifiers": [
+          {"field": "name", "join": " - ", "type": "append", "value": "MG-34"},
+          {
+            "field": "5ff7-57ed-1086-b4b0",
+            "type": "set",
+            "value": 90,
+            "conditions": [
+              {
+                "childId": "1aa4-c366-b73b-3632",
+                "childName": "Waffen SS",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": true,
+                "scope": "force",
+                "shared": true,
+                "type": "instanceOf",
+                "value": 1
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Lanzallamas",
+        "id": "9c50-9ac2-df48-4c17",
+        "hidden": false,
+        "import": true,
+        "targetId": "b560-df98-18e6-6811",
+        "type": "selectionEntry",
+        "categoryLinks": [{"name": "Armas de Apoyo", "id": "ac22-8a28-9d6c-472f", "hidden": false, "primary": true, "targetId": "7ab5-d3c1-6de2-42b0"}],
+        "costs": [{"name": "Puntos", "typeId": "5ff7-57ed-1086-b4b0", "value": 175}],
+        "modifiers": [
+          {
+            "field": "5ff7-57ed-1086-b4b0",
+            "type": "set",
+            "value": 160,
+            "conditions": [
+              {
+                "childId": "1aa4-c366-b73b-3632",
+                "childName": "Waffen SS",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": true,
+                "scope": "force",
+                "shared": true,
+                "type": "instanceOf",
+                "value": 1
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Mortero Pesado",
+        "id": "008e-13d5-d77b-846b",
+        "hidden": true,
+        "import": true,
+        "targetId": "aede-8dd4-7d71-0957",
+        "type": "selectionEntry",
+        "costs": [{"name": "Puntos", "typeId": "5ff7-57ed-1086-b4b0", "value": 140}]
+      },
+      {
+        "name": "Mortero Ligero",
+        "id": "92cd-ddcc-fe89-6444",
+        "hidden": false,
+        "import": true,
+        "targetId": "30ce-fddd-0c8d-8004",
+        "type": "selectionEntry",
+        "costs": [{"name": "Puntos", "typeId": "5ff7-57ed-1086-b4b0", "value": 135}],
+        "modifiers": [
+          {
+            "field": "5ff7-57ed-1086-b4b0",
+            "type": "set",
+            "value": 120,
+            "conditions": [
+              {
+                "childId": "1aa4-c366-b73b-3632",
+                "childName": "Waffen SS",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": true,
+                "scope": "force",
+                "shared": true,
+                "type": "instanceOf",
+                "value": 1
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Mortero Medio",
+        "id": "9a05-7e6d-7857-3bcd",
+        "hidden": false,
+        "import": true,
+        "targetId": "456e-d3fb-9832-a585",
+        "type": "selectionEntry",
+        "costs": [{"name": "Puntos", "typeId": "5ff7-57ed-1086-b4b0", "value": 145}],
+        "modifiers": [
+          {
+            "field": "5ff7-57ed-1086-b4b0",
+            "type": "set",
+            "value": 130,
+            "conditions": [
+              {
+                "childId": "1aa4-c366-b73b-3632",
+                "childName": "Waffen SS",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": true,
+                "scope": "force",
+                "shared": true,
+                "type": "instanceOf",
+                "value": 1
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "forceEntries": [
+      {
+        "name": "Wehrmacht",
+        "id": "bbc5-2a64-8564-8ff4",
+        "hidden": false,
+        "categoryLinks": [
+          {"name": "Tropas", "id": "6488-886e-9e7f-c581", "hidden": false, "targetId": "84b8-b88a-ee8e-23b2"},
+          {"name": "Armas de Apoyo", "id": "0046-a0f9-c7d6-3eb3", "hidden": false, "targetId": "7ab5-d3c1-6de2-42b0"},
+          {
+            "name": "Vehículos",
+            "id": "fa5d-e2e4-4d9c-2a91",
+            "hidden": false,
+            "targetId": "9946-f032-b979-81fc",
+            "constraints": [
+              {
+                "id": "fc47-7449-a59d-0b39",
+                "field": "selections",
+                "includeChildSelections": true,
+                "message": "Máximo 1 Vehículo",
+                "scope": "force",
+                "shared": true,
+                "type": "max",
+                "value": 1
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Fallschirmjäger",
+        "id": "eff2-5349-80f5-ea58",
+        "hidden": false,
+        "categoryLinks": [
+          {"name": "Tropas", "id": "d067-3149-9224-89a3", "hidden": false, "targetId": "84b8-b88a-ee8e-23b2"},
+          {"name": "Armas de Apoyo", "id": "8c85-4e90-d74a-9a66", "hidden": false, "targetId": "7ab5-d3c1-6de2-42b0"},
+          {
+            "name": "Vehículos",
+            "id": "3b5b-a084-c88e-c2e0",
+            "hidden": false,
+            "targetId": "9946-f032-b979-81fc",
+            "constraints": [
+              {
+                "id": "377c-afa7-f946-51e7",
+                "field": "selections",
+                "includeChildSelections": true,
+                "message": "Máximo 1 Vehículo",
+                "scope": "force",
+                "shared": true,
+                "type": "max",
+                "value": 1
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Waffen SS",
+        "id": "1aa4-c366-b73b-3632",
+        "hidden": false,
+        "categoryLinks": [
+          {"name": "Tropas", "id": "87dc-a3b0-51cf-b9f0", "hidden": false, "targetId": "84b8-b88a-ee8e-23b2"},
+          {"name": "Armas de Apoyo", "id": "8467-658a-f544-865f", "hidden": false, "targetId": "7ab5-d3c1-6de2-42b0"},
+          {
+            "name": "Vehículos",
+            "id": "58b4-a89d-345c-c80d",
+            "hidden": false,
+            "targetId": "9946-f032-b979-81fc",
+            "constraints": [
+              {
+                "id": "5380-6951-5f73-37bb",
+                "field": "selections",
+                "includeChildSelections": true,
+                "message": "Máximo 1 Vehículo",
+                "scope": "force",
+                "shared": true,
+                "type": "max",
+                "value": 1
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "selectionEntries": [
+      {
+        "name": "Moto con Sidecar con LMG",
+        "id": "b112-84b8-09bb-8468",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "categoryLinks": [{"name": "Vehículos", "id": "e2c3-c957-631e-956c", "hidden": false, "primary": true, "targetId": "9946-f032-b979-81fc"}],
+        "costs": [{"name": "Puntos", "typeId": "5ff7-57ed-1086-b4b0", "value": 105}],
+        "infoLinks": [{"name": "LMG", "id": "3bef-1e52-b146-a04d", "hidden": false, "targetId": "3650-8d00-f025-3054", "type": "profile"}],
+        "modifiers": [
+          {
+            "field": "5ff7-57ed-1086-b4b0",
+            "type": "set",
+            "value": 90,
+            "conditions": [
+              {
+                "childId": "1aa4-c366-b73b-3632",
+                "childName": "Waffen SS",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": true,
+                "scope": "force",
+                "shared": true,
+                "type": "instanceOf",
+                "value": 1
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Puma con Cañón",
+        "id": "be6a-20f5-0573-542d",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "categoryLinks": [{"name": "Vehículos", "id": "d291-680e-fda5-95c1", "hidden": false, "primary": true, "targetId": "9946-f032-b979-81fc"}],
+        "costs": [{"name": "Puntos", "typeId": "5ff7-57ed-1086-b4b0", "value": 230}],
+        "infoLinks": [{"name": "Cañón", "id": "1e05-074c-3a5e-9d28", "hidden": false, "targetId": "0c3b-7948-4cdc-4627", "type": "profile"}]
+      },
+      {
+        "name": "Semioruga con HMG",
+        "id": "bc0c-d2e0-40b7-2d42",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "categoryLinks": [{"name": "Vehículos", "id": "31dc-2c72-f27c-1947", "hidden": false, "primary": true, "targetId": "9946-f032-b979-81fc"}],
+        "costs": [{"name": "Puntos", "typeId": "5ff7-57ed-1086-b4b0", "value": 230}],
+        "infoLinks": [{"name": "HMG", "id": "67a2-fb80-7553-c83b", "hidden": false, "targetId": "d513-4f3c-1b2d-cc3b", "type": "profile"}]
+      }
+    ],
+    "sharedSelectionEntryGroups": [
+      {
+        "name": "Extras",
+        "id": "fd13-ea8a-2c6a-b475",
+        "hidden": false,
+        "entryLinks": [
+          {
+            "name": "Granadas",
+            "id": "89f0-232d-dc41-a3a7",
+            "hidden": false,
+            "import": true,
+            "page": "",
+            "sortIndex": 1,
+            "targetId": "4515-49bb-e615-c7a0",
+            "type": "selectionEntry",
+            "constraints": [{"id": "590a-5d03-0262-57d6", "field": "selections", "includeChildSelections": true, "scope": "force", "shared": true, "type": "max", "value": 3}],
+            "costs": [{"name": "Puntos", "typeId": "5ff7-57ed-1086-b4b0", "value": 5}]
+          },
+          {
+            "name": "Cóctel Molotov",
+            "id": "d989-51be-9c67-18a9",
+            "hidden": false,
+            "import": true,
+            "sortIndex": 2,
+            "targetId": "b26e-42b3-ae8c-394c",
+            "type": "selectionEntry",
+            "constraints": [{"id": "7abc-68d0-11c2-8653", "field": "selections", "includeChildSelections": true, "scope": "force", "shared": true, "type": "max", "value": 4}],
+            "costs": [{"name": "Puntos", "typeId": "5ff7-57ed-1086-b4b0", "value": 5}]
+          },
+          {
+            "name": "Granadas de Lanzagrandas",
+            "id": "e3e3-98fe-b1b2-e402",
+            "hidden": false,
+            "import": true,
+            "sortIndex": 3,
+            "targetId": "e13d-c5a6-8f59-e746",
+            "type": "selectionEntry",
+            "constraints": [{"id": "26b7-9783-dc17-e6c1", "field": "selections", "includeChildSelections": true, "scope": "force", "shared": true, "type": "max", "value": 3}],
+            "costs": [{"name": "Puntos", "typeId": "5ff7-57ed-1086-b4b0", "value": 5}]
+          },
+          {
+            "name": "Lanzacohetes Recargable",
+            "id": "c26e-e18b-6dc2-f263",
+            "hidden": false,
+            "import": true,
+            "sortIndex": 4,
+            "targetId": "4759-da8f-40fd-3a93",
+            "type": "selectionEntry",
+            "constraints": [{"id": "254b-c3cc-837f-51d6", "field": "selections", "includeChildSelections": true, "scope": "force", "shared": true, "type": "max", "value": 3}],
+            "costs": [{"name": "Puntos", "typeId": "5ff7-57ed-1086-b4b0", "value": 25}]
+          },
+          {
+            "name": "Cohetes Extra",
+            "id": "da28-8a04-4d59-6e1c",
+            "hidden": false,
+            "import": true,
+            "sortIndex": 5,
+            "targetId": "82b5-07fe-b06d-05ae",
+            "type": "selectionEntry",
+            "constraints": [{"id": "0554-d3dc-4b56-e956", "field": "selections", "includeChildSelections": true, "scope": "force", "shared": true, "type": "max", "value": 4}],
+            "costs": [{"name": "Puntos", "typeId": "5ff7-57ed-1086-b4b0", "value": 20}]
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,961 @@
+{
+  "catalogue": {
+    "name": "URSS",
+    "id": "2119-439b-b3de-1f85",
+    "battleScribeVersion": "2.03",
+    "gameSystemId": "sys-3a9e-05ac-a496-2bc9",
+    "gameSystemRevision": 1,
+    "library": false,
+    "revision": 1,
+    "type": "catalogue",
+    "entryLinks": [
+      {
+        "name": "Líder",
+        "id": "4f55-7893-fc6e-e532",
+        "hidden": false,
+        "import": true,
+        "targetId": "6ba0-8829-68a2-f510",
+        "type": "selectionEntry",
+        "costs": [{"name": "Puntos", "typeId": "5ff7-57ed-1086-b4b0", "value": 50}],
+        "modifierGroups": [
+          {
+            "type": "and",
+            "modifiers": [
+              {
+                "comment": "GDA",
+                "field": "5ff7-57ed-1086-b4b0",
+                "type": "set",
+                "value": 65,
+                "conditions": [
+                  {
+                    "childId": "e359-29d8-3923-a8a0",
+                    "childName": "Ejército de la Guardia",
+                    "field": "selections",
+                    "includeChildSelections": true,
+                    "scope": "force",
+                    "shared": true,
+                    "type": "instanceOf",
+                    "value": 1
+                  }
+                ]
+              },
+              {
+                "comment": "MAR",
+                "field": "5ff7-57ed-1086-b4b0",
+                "type": "set",
+                "value": 60,
+                "conditions": [
+                  {
+                    "childId": "46e6-bc31-38e7-9ae1",
+                    "childName": "Infantería de Marina",
+                    "field": "selections",
+                    "includeChildSelections": true,
+                    "scope": "force",
+                    "shared": true,
+                    "type": "instanceOf",
+                    "value": 1
+                  }
+                ]
+              },
+              {"field": "annotation", "type": "set", "value": "Komissar"}
+            ]
+          }
+        ],
+        "rules": [{"name": "Komissar", "id": "9e30-e90d-1805-99e1", "description": "+1 Token de Órdenes mientras viva.", "hidden": false}]
+      },
+      {
+        "name": "Soldado con LMG",
+        "id": "0b01-25e8-7b66-46ee",
+        "hidden": false,
+        "import": true,
+        "targetId": "167c-7d9d-86d8-d70b",
+        "type": "selectionEntry",
+        "constraints": [{"id": "f8a9-f86c-bdcc-b70e", "field": "selections", "includeChildSelections": true, "scope": "force", "shared": true, "type": "max", "value": 0}],
+        "costs": [{"name": "Puntos", "typeId": "5ff7-57ed-1086-b4b0", "value": 40}],
+        "modifierGroups": [
+          {
+            "type": "and",
+            "modifiers": [
+              {
+                "comment": "GDA",
+                "field": "5ff7-57ed-1086-b4b0",
+                "type": "set",
+                "value": 55,
+                "conditions": [
+                  {
+                    "childId": "e359-29d8-3923-a8a0",
+                    "childName": "Ejército de la Guardia",
+                    "field": "selections",
+                    "includeChildSelections": true,
+                    "scope": "force",
+                    "shared": true,
+                    "type": "instanceOf",
+                    "value": 1
+                  }
+                ]
+              },
+              {
+                "comment": "MAR",
+                "field": "5ff7-57ed-1086-b4b0",
+                "type": "set",
+                "value": 50,
+                "conditions": [
+                  {
+                    "childId": "46e6-bc31-38e7-9ae1",
+                    "childName": "Infantería de Marina",
+                    "field": "selections",
+                    "includeChildSelections": true,
+                    "scope": "force",
+                    "shared": true,
+                    "type": "instanceOf",
+                    "value": 1
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "modifiers": [
+          {
+            "field": "f8a9-f86c-bdcc-b70e",
+            "type": "increment",
+            "value": 1,
+            "repeats": [
+              {
+                "childId": "fc1a-85d4-18f6-e078",
+                "childName": "Soldado",
+                "field": "selections",
+                "includeChildSelections": true,
+                "repeats": 1,
+                "roundUp": false,
+                "scope": "force",
+                "shared": true,
+                "value": 4
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Ayudante",
+        "id": "3169-32c4-b5f4-0213",
+        "hidden": false,
+        "import": true,
+        "targetId": "08b2-375f-32c6-bd6d",
+        "type": "selectionEntry",
+        "costs": [{"name": "Puntos", "typeId": "5ff7-57ed-1086-b4b0", "value": 45}],
+        "modifierGroups": [
+          {
+            "type": "and",
+            "modifiers": [
+              {
+                "comment": "GDA",
+                "field": "5ff7-57ed-1086-b4b0",
+                "type": "set",
+                "value": 60,
+                "conditions": [
+                  {
+                    "childId": "e359-29d8-3923-a8a0",
+                    "childName": "Ejército de la Guardia",
+                    "field": "selections",
+                    "includeChildSelections": true,
+                    "scope": "force",
+                    "shared": true,
+                    "type": "instanceOf",
+                    "value": 1
+                  }
+                ]
+              },
+              {
+                "comment": "MAR",
+                "field": "5ff7-57ed-1086-b4b0",
+                "type": "set",
+                "value": 55,
+                "conditions": [
+                  {
+                    "childId": "46e6-bc31-38e7-9ae1",
+                    "childName": "Infantería de Marina",
+                    "field": "selections",
+                    "includeChildSelections": true,
+                    "scope": "force",
+                    "shared": true,
+                    "type": "instanceOf",
+                    "value": 1
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Soldado con Subfusil (SMG)",
+        "id": "56f3-6c83-6ba1-0b4a",
+        "hidden": false,
+        "import": true,
+        "targetId": "89c3-6fa3-96a3-13d3",
+        "type": "selectionEntry",
+        "costs": [{"name": "Puntos", "typeId": "5ff7-57ed-1086-b4b0", "value": 25}],
+        "modifierGroups": [
+          {
+            "type": "and",
+            "modifiers": [
+              {
+                "comment": "GDA",
+                "field": "5ff7-57ed-1086-b4b0",
+                "type": "set",
+                "value": 40,
+                "conditions": [
+                  {
+                    "childId": "e359-29d8-3923-a8a0",
+                    "childName": "Ejército de la Guardia",
+                    "field": "selections",
+                    "includeChildSelections": true,
+                    "scope": "force",
+                    "shared": true,
+                    "type": "instanceOf",
+                    "value": 1
+                  }
+                ]
+              },
+              {
+                "comment": "MAR",
+                "field": "5ff7-57ed-1086-b4b0",
+                "type": "set",
+                "value": 35,
+                "conditions": [
+                  {
+                    "childId": "46e6-bc31-38e7-9ae1",
+                    "childName": "Infantería de Marina",
+                    "field": "selections",
+                    "includeChildSelections": true,
+                    "scope": "force",
+                    "shared": true,
+                    "type": "instanceOf",
+                    "value": 1
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Soldado con Pistola",
+        "id": "6b1d-6c8c-631b-6110",
+        "hidden": false,
+        "import": true,
+        "targetId": "141e-83d2-adee-bf41",
+        "type": "selectionEntry",
+        "costs": [{"name": "Puntos", "typeId": "5ff7-57ed-1086-b4b0", "value": 15}],
+        "modifiers": [
+          {
+            "field": "hidden",
+            "type": "set",
+            "value": true,
+            "conditionGroups": [
+              {
+                "type": "or",
+                "conditions": [
+                  {
+                    "childId": "e359-29d8-3923-a8a0",
+                    "childName": "Ejército de la Guardia",
+                    "field": "selections",
+                    "includeChildSelections": true,
+                    "scope": "force",
+                    "shared": true,
+                    "type": "instanceOf",
+                    "value": 1
+                  },
+                  {
+                    "childId": "46e6-bc31-38e7-9ae1",
+                    "childName": "Infantería de Marina",
+                    "field": "selections",
+                    "includeChildSelections": true,
+                    "scope": "force",
+                    "shared": true,
+                    "type": "instanceOf",
+                    "value": 1
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Soldado con Escopeta",
+        "id": "2a95-75a1-126b-d5ac",
+        "hidden": false,
+        "import": true,
+        "targetId": "e71c-d1f4-3009-784e",
+        "type": "selectionEntry",
+        "costs": [{"name": "Puntos", "typeId": "5ff7-57ed-1086-b4b0", "value": 20}],
+        "modifiers": [
+          {
+            "field": "hidden",
+            "type": "set",
+            "value": true,
+            "conditionGroups": [
+              {
+                "type": "or",
+                "conditions": [
+                  {
+                    "childId": "e359-29d8-3923-a8a0",
+                    "childName": "Ejército de la Guardia",
+                    "field": "selections",
+                    "includeChildSelections": true,
+                    "scope": "force",
+                    "shared": true,
+                    "type": "instanceOf",
+                    "value": 1
+                  },
+                  {
+                    "childId": "46e6-bc31-38e7-9ae1",
+                    "childName": "Infantería de Marina",
+                    "field": "selections",
+                    "includeChildSelections": true,
+                    "scope": "force",
+                    "shared": true,
+                    "type": "instanceOf",
+                    "value": 1
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Tirador Designado",
+        "id": "cb1f-be49-ee16-03b8",
+        "hidden": false,
+        "import": true,
+        "targetId": "f0de-041b-afd1-2b53",
+        "type": "selectionEntry",
+        "modifierGroups": [
+          {
+            "type": "and",
+            "modifiers": [
+              {
+                "comment": "GDA",
+                "field": "5ff7-57ed-1086-b4b0",
+                "type": "set",
+                "value": 45,
+                "conditions": [
+                  {
+                    "childId": "e359-29d8-3923-a8a0",
+                    "childName": "Ejército de la Guardia",
+                    "field": "selections",
+                    "includeChildSelections": true,
+                    "scope": "force",
+                    "shared": true,
+                    "type": "instanceOf",
+                    "value": 1
+                  }
+                ]
+              },
+              {
+                "comment": "MAR",
+                "field": "5ff7-57ed-1086-b4b0",
+                "type": "set",
+                "value": 40,
+                "conditions": [
+                  {
+                    "childId": "46e6-bc31-38e7-9ae1",
+                    "childName": "Infantería de Marina",
+                    "field": "selections",
+                    "includeChildSelections": true,
+                    "scope": "force",
+                    "shared": true,
+                    "type": "instanceOf",
+                    "value": 1
+                  }
+                ]
+              },
+              {
+                "field": "hidden",
+                "type": "set",
+                "value": true,
+                "conditions": [
+                  {
+                    "childId": "3c54-0d2e-37a2-1438",
+                    "childName": "Milicia",
+                    "field": "selections",
+                    "includeChildSelections": true,
+                    "scope": "force",
+                    "shared": true,
+                    "type": "instanceOf",
+                    "value": 1
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Soldado con Fusil",
+        "id": "7d03-a843-a885-d51b",
+        "hidden": false,
+        "import": true,
+        "targetId": "3a6c-169a-0f5c-ce6d",
+        "type": "selectionEntry",
+        "costs": [{"name": "Puntos", "typeId": "5ff7-57ed-1086-b4b0", "value": 20}],
+        "modifierGroups": [
+          {
+            "type": "and",
+            "modifiers": [
+              {
+                "comment": "GDA",
+                "field": "5ff7-57ed-1086-b4b0",
+                "type": "set",
+                "value": 35,
+                "conditions": [
+                  {
+                    "childId": "e359-29d8-3923-a8a0",
+                    "childName": "Ejército de la Guardia",
+                    "field": "selections",
+                    "includeChildSelections": true,
+                    "scope": "force",
+                    "shared": true,
+                    "type": "instanceOf",
+                    "value": 1
+                  }
+                ]
+              },
+              {
+                "comment": "MAR",
+                "field": "5ff7-57ed-1086-b4b0",
+                "type": "set",
+                "value": 30,
+                "conditions": [
+                  {
+                    "childId": "46e6-bc31-38e7-9ae1",
+                    "childName": "Infantería de Marina",
+                    "field": "selections",
+                    "includeChildSelections": true,
+                    "scope": "force",
+                    "shared": true,
+                    "type": "instanceOf",
+                    "value": 1
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Ametralladora Pesada (HMG)",
+        "id": "7e08-90c6-760b-af12",
+        "hidden": false,
+        "import": true,
+        "targetId": "7a12-244d-f55a-2bdd",
+        "type": "selectionEntry",
+        "costs": [{"name": "Puntos", "typeId": "5ff7-57ed-1086-b4b0", "value": 130}],
+        "modifierGroups": [
+          {
+            "type": "and",
+            "modifiers": [
+              {
+                "comment": "GDA",
+                "field": "5ff7-57ed-1086-b4b0",
+                "type": "set",
+                "value": 175,
+                "conditions": [
+                  {
+                    "childId": "e359-29d8-3923-a8a0",
+                    "childName": "Ejército de la Guardia",
+                    "field": "selections",
+                    "includeChildSelections": true,
+                    "scope": "force",
+                    "shared": true,
+                    "type": "instanceOf",
+                    "value": 1
+                  }
+                ]
+              },
+              {
+                "comment": "MAR",
+                "field": "5ff7-57ed-1086-b4b0",
+                "type": "set",
+                "value": 160,
+                "conditions": [
+                  {
+                    "childId": "46e6-bc31-38e7-9ae1",
+                    "childName": "Infantería de Marina",
+                    "field": "selections",
+                    "includeChildSelections": true,
+                    "scope": "force",
+                    "shared": true,
+                    "type": "instanceOf",
+                    "value": 1
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Ametralladora Media (MMG)",
+        "id": "7836-aaaf-4d9f-172a",
+        "hidden": false,
+        "import": true,
+        "targetId": "9a55-7e3c-2d39-7357",
+        "type": "selectionEntry",
+        "costs": [{"name": "Puntos", "typeId": "5ff7-57ed-1086-b4b0", "value": 70}],
+        "modifierGroups": [
+          {
+            "type": "and",
+            "modifiers": [
+              {
+                "comment": "GDA",
+                "field": "5ff7-57ed-1086-b4b0",
+                "type": "set",
+                "value": 100,
+                "conditions": [
+                  {
+                    "childId": "e359-29d8-3923-a8a0",
+                    "childName": "Ejército de la Guardia",
+                    "field": "selections",
+                    "includeChildSelections": true,
+                    "scope": "force",
+                    "shared": true,
+                    "type": "instanceOf",
+                    "value": 1
+                  }
+                ]
+              },
+              {
+                "comment": "MAR",
+                "field": "5ff7-57ed-1086-b4b0",
+                "type": "set",
+                "value": 90,
+                "conditions": [
+                  {
+                    "childId": "46e6-bc31-38e7-9ae1",
+                    "childName": "Infantería de Marina",
+                    "field": "selections",
+                    "includeChildSelections": true,
+                    "scope": "force",
+                    "shared": true,
+                    "type": "instanceOf",
+                    "value": 1
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Equipo de Francotiradores",
+        "id": "0e0e-38df-34ba-4699",
+        "hidden": false,
+        "import": true,
+        "targetId": "88a3-7875-42bd-089c",
+        "type": "selectionEntry",
+        "modifierGroups": [
+          {
+            "type": "and",
+            "modifiers": [
+              {
+                "comment": "GDA",
+                "field": "5ff7-57ed-1086-b4b0",
+                "type": "set",
+                "value": 130,
+                "conditions": [
+                  {
+                    "childId": "e359-29d8-3923-a8a0",
+                    "childName": "Ejército de la Guardia",
+                    "field": "selections",
+                    "includeChildSelections": true,
+                    "scope": "force",
+                    "shared": true,
+                    "type": "instanceOf",
+                    "value": 1
+                  }
+                ]
+              },
+              {
+                "comment": "MAR",
+                "field": "5ff7-57ed-1086-b4b0",
+                "type": "set",
+                "value": 120,
+                "conditions": [
+                  {
+                    "childId": "46e6-bc31-38e7-9ae1",
+                    "childName": "Infantería de Marina",
+                    "field": "selections",
+                    "includeChildSelections": true,
+                    "scope": "force",
+                    "shared": true,
+                    "type": "instanceOf",
+                    "value": 1
+                  }
+                ]
+              },
+              {
+                "field": "hidden",
+                "type": "set",
+                "value": true,
+                "conditions": [
+                  {
+                    "childId": "3c54-0d2e-37a2-1438",
+                    "childName": "Milicia",
+                    "field": "selections",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "force",
+                    "shared": true,
+                    "type": "instanceOf",
+                    "value": 1
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Lanzallamas",
+        "id": "f871-f51d-0fc9-6b14",
+        "hidden": false,
+        "import": true,
+        "targetId": "b560-df98-18e6-6811",
+        "type": "selectionEntry",
+        "costs": [{"name": "Puntos", "typeId": "5ff7-57ed-1086-b4b0", "value": 130}],
+        "modifierGroups": [
+          {
+            "type": "and",
+            "modifiers": [
+              {
+                "comment": "GDA",
+                "field": "5ff7-57ed-1086-b4b0",
+                "type": "set",
+                "value": 175,
+                "conditions": [
+                  {
+                    "childId": "e359-29d8-3923-a8a0",
+                    "childName": "Ejército de la Guardia",
+                    "field": "selections",
+                    "includeChildSelections": true,
+                    "scope": "force",
+                    "shared": true,
+                    "type": "instanceOf",
+                    "value": 1
+                  }
+                ]
+              },
+              {
+                "comment": "MAR",
+                "field": "5ff7-57ed-1086-b4b0",
+                "type": "set",
+                "value": 160,
+                "conditions": [
+                  {
+                    "childId": "46e6-bc31-38e7-9ae1",
+                    "childName": "Infantería de Marina",
+                    "field": "selections",
+                    "includeChildSelections": true,
+                    "scope": "force",
+                    "shared": true,
+                    "type": "instanceOf",
+                    "value": 1
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Mortero Pesado",
+        "id": "1c74-aaf1-5c5e-4fa0",
+        "hidden": true,
+        "import": true,
+        "targetId": "aede-8dd4-7d71-0957",
+        "type": "selectionEntry",
+        "costs": [{"name": "Puntos", "typeId": "5ff7-57ed-1086-b4b0", "value": 140}]
+      },
+      {
+        "name": "Mortero Ligero",
+        "id": "3c55-3d7c-eb0a-af87",
+        "hidden": false,
+        "import": true,
+        "targetId": "30ce-fddd-0c8d-8004",
+        "type": "selectionEntry",
+        "costs": [{"name": "Puntos", "typeId": "5ff7-57ed-1086-b4b0", "value": 90}],
+        "modifierGroups": [
+          {
+            "type": "and",
+            "modifiers": [
+              {
+                "comment": "GDA",
+                "field": "5ff7-57ed-1086-b4b0",
+                "type": "set",
+                "value": 135,
+                "conditions": [
+                  {
+                    "childId": "e359-29d8-3923-a8a0",
+                    "childName": "Ejército de la Guardia",
+                    "field": "selections",
+                    "includeChildSelections": true,
+                    "scope": "force",
+                    "shared": true,
+                    "type": "instanceOf",
+                    "value": 1
+                  }
+                ]
+              },
+              {
+                "comment": "MAR",
+                "field": "5ff7-57ed-1086-b4b0",
+                "type": "set",
+                "value": 120,
+                "conditions": [
+                  {
+                    "childId": "46e6-bc31-38e7-9ae1",
+                    "childName": "Infantería de Marina",
+                    "field": "selections",
+                    "includeChildSelections": true,
+                    "scope": "force",
+                    "shared": true,
+                    "type": "instanceOf",
+                    "value": 1
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Mortero Medio",
+        "id": "0f0d-b39a-c4f3-2983",
+        "hidden": false,
+        "import": true,
+        "targetId": "456e-d3fb-9832-a585",
+        "type": "selectionEntry",
+        "costs": [{"name": "Puntos", "typeId": "5ff7-57ed-1086-b4b0", "value": 100}],
+        "modifierGroups": [
+          {
+            "type": "and",
+            "modifiers": [
+              {
+                "comment": "GDA",
+                "field": "5ff7-57ed-1086-b4b0",
+                "type": "set",
+                "value": 145,
+                "conditions": [
+                  {
+                    "childId": "e359-29d8-3923-a8a0",
+                    "childName": "Ejército de la Guardia",
+                    "field": "selections",
+                    "includeChildSelections": true,
+                    "scope": "force",
+                    "shared": true,
+                    "type": "instanceOf",
+                    "value": 1
+                  }
+                ]
+              },
+              {
+                "comment": "MAR",
+                "field": "5ff7-57ed-1086-b4b0",
+                "type": "set",
+                "value": 130,
+                "conditions": [
+                  {
+                    "childId": "46e6-bc31-38e7-9ae1",
+                    "childName": "Infantería de Marina",
+                    "field": "selections",
+                    "includeChildSelections": true,
+                    "scope": "force",
+                    "shared": true,
+                    "type": "instanceOf",
+                    "value": 1
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "forceEntries": [
+      {
+        "name": "Ejército de la Guardia",
+        "id": "e359-29d8-3923-a8a0",
+        "hidden": false,
+        "categoryLinks": [
+          {"name": "Tropas", "id": "7ed7-116f-dda4-3312", "hidden": false, "targetId": "84b8-b88a-ee8e-23b2"},
+          {"name": "Armas de Apoyo", "id": "c21c-6db6-3c60-4739", "hidden": false, "targetId": "7ab5-d3c1-6de2-42b0"},
+          {
+            "name": "Vehículos",
+            "id": "70b4-07a7-0f66-2730",
+            "hidden": false,
+            "targetId": "9946-f032-b979-81fc",
+            "constraints": [
+              {
+                "id": "df12-3035-9919-7e67",
+                "field": "selections",
+                "includeChildSelections": true,
+                "message": "Máximo 1 vehículo",
+                "scope": "force",
+                "shared": true,
+                "type": "max",
+                "value": 1
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Milicia",
+        "id": "3c54-0d2e-37a2-1438",
+        "hidden": false,
+        "categoryLinks": [
+          {"name": "Tropas", "id": "3234-c235-eb7b-271d", "hidden": false, "targetId": "84b8-b88a-ee8e-23b2"},
+          {"name": "Armas de Apoyo", "id": "3817-c2e5-8768-7d15", "hidden": false, "targetId": "7ab5-d3c1-6de2-42b0"},
+          {
+            "name": "Vehículos",
+            "id": "ba27-8584-4e22-222a",
+            "hidden": false,
+            "targetId": "9946-f032-b979-81fc",
+            "constraints": [
+              {
+                "id": "50fe-7f59-aa67-9754",
+                "field": "selections",
+                "includeChildSelections": true,
+                "message": "Máximo 1 vehículo",
+                "scope": "force",
+                "shared": true,
+                "type": "max",
+                "value": 1
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Infantería de Marina",
+        "id": "46e6-bc31-38e7-9ae1",
+        "hidden": false,
+        "categoryLinks": [
+          {"name": "Tropas", "id": "13fd-322f-3379-f322", "hidden": false, "targetId": "84b8-b88a-ee8e-23b2"},
+          {"name": "Armas de Apoyo", "id": "0a3b-b647-17be-fdd0", "hidden": false, "targetId": "7ab5-d3c1-6de2-42b0"},
+          {
+            "name": "Vehículos",
+            "id": "7276-fbda-8f6b-efe6",
+            "hidden": false,
+            "targetId": "9946-f032-b979-81fc",
+            "constraints": [
+              {
+                "id": "8cf8-23fb-7eea-330e",
+                "field": "selections",
+                "includeChildSelections": true,
+                "message": "Máximo 1 vehículo",
+                "scope": "force",
+                "shared": true,
+                "type": "max",
+                "value": 1
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "selectionEntries": [
+      {
+        "name": "BA-64 con HMG",
+        "id": "2a9d-5632-af19-32bd",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "categoryLinks": [{"name": "Vehículos", "id": "66b6-89a4-a43d-40f7", "hidden": false, "primary": true, "targetId": "9946-f032-b979-81fc"}],
+        "costs": [{"name": "Puntos", "typeId": "5ff7-57ed-1086-b4b0", "value": 230}],
+        "infoLinks": [{"name": "HMG", "id": "93ff-6da6-256b-8166", "hidden": false, "targetId": "d513-4f3c-1b2d-cc3b", "type": "profile"}],
+        "modifierGroups": [
+          {
+            "type": "and",
+            "modifiers": [
+              {
+                "field": "hidden",
+                "type": "set",
+                "value": true,
+                "conditions": [
+                  {
+                    "childId": "3c54-0d2e-37a2-1438",
+                    "childName": "Milicia",
+                    "field": "selections",
+                    "includeChildSelections": true,
+                    "scope": "force",
+                    "shared": true,
+                    "type": "instanceOf",
+                    "value": 1
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Jeep con MMG",
+        "id": "c13f-6f28-f31a-fd2f",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "categoryLinks": [{"name": "Vehículos", "id": "fa18-de66-0808-6519", "hidden": false, "primary": true, "targetId": "9946-f032-b979-81fc"}],
+        "costs": [{"name": "Puntos", "typeId": "5ff7-57ed-1086-b4b0", "value": 140}],
+        "infoLinks": [{"name": "MMG", "id": "8d56-dd25-5288-967d", "hidden": false, "targetId": "1882-d25a-3103-c575", "type": "profile"}],
+        "modifierGroups": [
+          {
+            "type": "and",
+            "modifiers": [
+              {
+                "comment": "GDA",
+                "field": "5ff7-57ed-1086-b4b0",
+                "type": "set",
+                "value": 170,
+                "conditions": [
+                  {
+                    "childId": "e359-29d8-3923-a8a0",
+                    "childName": "Ejército de la Guardia",
+                    "field": "selections",
+                    "includeChildSelections": true,
+                    "scope": "force",
+                    "shared": true,
+                    "type": "instanceOf",
+                    "value": 1
+                  }
+                ]
+              },
+              {
+                "comment": "MAR",
+                "field": "5ff7-57ed-1086-b4b0",
+                "type": "set",
+                "value": 160,
+                "conditions": [
+                  {
+                    "childId": "46e6-bc31-38e7-9ae1",
+                    "childName": "Infantería de Marina",
+                    "field": "selections",
+                    "includeChildSelections": true,
+                    "scope": "force",
+                    "shared": true,
+                    "type": "instanceOf",
+                    "value": 1
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}
